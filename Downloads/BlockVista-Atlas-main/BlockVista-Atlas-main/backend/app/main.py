@@ -31,11 +31,13 @@ app.include_router(behavior.router, prefix="/api/v1", tags=["behavior"])
 app.include_router(audit.router, prefix="/api/v1", tags=["audit"])
 
 # New Routers (Phase 11 & 12 & 14)
-from app.routers import distributor, sales, amc_intelligence
+# New Routers (Phase 11 & 12 & 14)
+from app.routers import distributor, sales, amc_intelligence, bots
 from app.api.endpoints import atlas, integrations, auth
 app.include_router(distributor.router)
 app.include_router(sales.router)
 app.include_router(amc_intelligence.router, prefix="/api/v1")
+app.include_router(bots.router, prefix="/api/v1/bots", tags=["bots"])
 app.include_router(atlas.router, prefix="/api/v1/atlas", tags=["atlas"])
 app.include_router(integrations.router, prefix="/api/v1/integrations", tags=["integrations"])
 app.include_router(auth.router, prefix="/api/v1/auth", tags=["auth"])

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
+import AlgoBotPanel from '../../components/atlas/AlgoBotPanel';
 
 const DashboardAMC = () => {
+    // ... existing interface ...
     interface BipComponent {
         label: string;
         score: number;
@@ -27,6 +29,7 @@ const DashboardAMC = () => {
     });
 
     useEffect(() => {
+        // ... existing fetch logic ...
         // 1. Fetch AMC Overview
         fetch('http://localhost:8000/api/v1/amc/overview')
             .then(res => res.json())
@@ -67,6 +70,9 @@ const DashboardAMC = () => {
                 <h1 className="text-3xl font-bold mb-2">AMC Governance Dashboard</h1>
                 <p className="text-terminal-text-muted">Executive Health Snapshot • Fund House Level</p>
             </div>
+
+            {/* Algo Bot Action Panel */}
+            <AlgoBotPanel />
 
             {/* BIP Anchor Widget - Top Section */}
             <div className="bg-terminal-surface border border-terminal-border rounded-lg p-6">

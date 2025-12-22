@@ -1,13 +1,17 @@
+import AlgoBotPanel from '../../components/atlas/AlgoBotPanel';
+
 const DashboardAdvisor = () => {
     return (
         <div className="space-y-6">
             {/* Header */}
-            <div>
+            <div className="mb-4">
                 <h1 className="text-3xl font-bold mb-2">Advisor Command Center</h1>
-                <p className="text-terminal-text-muted">Client Health • SIP Monitoring • Suitability Actions</p>
+                <p className="text-terminal-text-muted">Distributor & MFD Daily Actionables</p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <AlgoBotPanel />
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Left Column: Action Queue */}
                 <div className="lg:col-span-2 space-y-6">
                     {/* Urgency Actions */}
@@ -77,8 +81,8 @@ const DashboardAdvisor = () => {
                                     <div className={`text-[10px] ${client.alert ? 'text-amber-500' : 'text-terminal-text-muted'}`}>{client.status}</div>
                                 </div>
                                 <div className={`h-8 w-8 rounded-full flex items-center justify-center font-bold text-xs border ${client.score >= 90 ? 'border-green-500 text-green-400 bg-green-900/20' :
-                                        client.score >= 70 ? 'border-blue-500 text-blue-400 bg-blue-900/20' :
-                                            'border-amber-500 text-amber-500 bg-amber-900/20'
+                                    client.score >= 70 ? 'border-blue-500 text-blue-400 bg-blue-900/20' :
+                                        'border-amber-500 text-amber-500 bg-amber-900/20'
                                     }`}>
                                     {client.score}
                                 </div>

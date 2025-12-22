@@ -1,14 +1,18 @@
+import AlgoBotPanel from '../../components/atlas/AlgoBotPanel';
+
 const DashboardWealth = () => {
     return (
         <div className="space-y-6">
             {/* Header */}
-            <div>
+            <div className="mb-4">
                 <h1 className="text-3xl font-bold mb-2">Wealth Governance Overlay</h1>
-                <p className="text-terminal-text-muted">Aggregated Portfolio Intelligence • Multi-AMC View</p>
+                <p className="text-terminal-text-muted">Multi-Family Office & HNI Portfolio Standards</p>
             </div>
 
+            <AlgoBotPanel />
+
             {/* Top Stats Row */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
                     { label: "Total Assets (AUA)", value: "₹ 842 Cr", sub: "Across 145 Families", color: "text-terminal-text" },
                     { label: "Equity / Debt Ratio", value: "65 : 35", sub: "Aggressive Bias", color: "text-blue-400" },
@@ -43,8 +47,8 @@ const DashboardWealth = () => {
                                     <div className="text-xs text-terminal-text-muted">{alert.issue}</div>
                                 </div>
                                 <div className={`px-2 py-1 rounded text-[10px] font-bold uppercase border ${alert.severity === 'High' ? 'bg-red-900/30 text-red-500 border-red-500' :
-                                        alert.severity === 'Medium' ? 'bg-amber-900/30 text-amber-500 border-amber-500' :
-                                            'bg-blue-900/30 text-blue-500 border-blue-500'
+                                    alert.severity === 'Medium' ? 'bg-amber-900/30 text-amber-500 border-amber-500' :
+                                        'bg-blue-900/30 text-blue-500 border-blue-500'
                                     }`}>
                                     {alert.risk}
                                 </div>

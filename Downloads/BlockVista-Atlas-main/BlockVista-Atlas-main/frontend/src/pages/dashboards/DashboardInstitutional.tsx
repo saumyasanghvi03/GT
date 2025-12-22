@@ -1,13 +1,16 @@
+import AlgoBotPanel from '../../components/atlas/AlgoBotPanel';
+
 const DashboardInstitutional = () => {
     return (
         <div className="space-y-6">
-            {/* Header */}
-            <div>
+            <div className="mb-4">
                 <h1 className="text-3xl font-bold mb-2">Institutional Oversight</h1>
-                <p className="text-terminal-text-muted">Systemic Risk • Audit Trails • Transparency Governance</p>
+                <p className="text-terminal-text-muted">Trustee & Regulator View</p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <AlgoBotPanel />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Risk Anchors */}
                 <div className="bg-terminal-surface border border-terminal-border rounded-lg p-6">
                     <h2 className="text-lg font-bold mb-6">Systemic Risk Posture</h2>
