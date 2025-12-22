@@ -1,0 +1,6 @@
+[2025-07-12T07:49:09.732Z] [INFO] Graphics Models: Intel(R) Iris(R) Xe Graphics
+[2025-07-12T07:49:09.732Z] [INFO] CPU: GenuineIntel - 11th Gen Intel(R) Core(TM) i5-1155G7 @ 2.50GHz
+[2025-07-12T07:49:09.732Z] [INFO] Graphics Vendors: Intel Corporation
+[2025-07-12T07:49:09.732Z] [INFO] Supported: CPU,IntelNPU
+[2025-07-12T07:49:09.933Z] [INFO] Command registration.
+[2025-07-12T07:49:12.933Z] [INFO] telemetry event:activate_extension sent

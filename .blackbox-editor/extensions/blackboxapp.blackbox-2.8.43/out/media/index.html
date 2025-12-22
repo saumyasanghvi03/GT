@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{stylesMainUri}}" rel="stylesheet">
+    <link href="{{vendorHighlightCss}}" rel="stylesheet">
+    <script src="{{vendorHighlightJs}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked-highlight/lib/index.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" id="hljs-theme-dark">    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/vs2015.min.css" id="hljs-theme-dark"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="overflow-hidden">
+    <div class="flex flex-col h-screen">
+      <!-- Header Panel -->
+      <div id="header-panel" class="flex items-center justify-between px-4 py-2 shadow-sm">
+        <div class="text-sm font-semibold">Chat with BLACKBOXAI</div>
+        <div class="buttons-group flex gap-2">
+          <button id="clear-button" title="New Chat" class="rounded-lg px-2 py-1 text-white">
+            New
+          </button>
+        </div>
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="flex flex-col items-center justify-center h-full text-center px-4">
+        <h2 class="text-xl font-semibold mb-2">Welcome to CyberCoder ✨</h2>
+        <p class="text-sm text-gray-600">
+          CyberCoder is an Autonomous Coding Agent in your VSCode that can fully implement new features, edit existing and build projects from scratch.
+        </p>
+      </div>
+
+      <!-- Chat List -->
+      <div class="flex-1 overflow-y-auto" id="qa-list"></div>
+
+      <!-- Input Panel -->
+      <div class="flex flex-col px-4 pt-2">
+        <div id="selected-files-section" class="hidden">
+          <div class="text-xs font-medium py-2">Selected Files</div>
+          <div id="selected-files-list" class="selected-files-list max-h-[4.375rem] overflow-y-auto"></div>
+        </div>
+      </div>
+      <div class="relative flex flex-col w-full gap-2 p-4 items-center pt-2">
+        <div class="flex-1 relative w-full textarea-wrapper">
+          <textarea
+            id="question-input"
+            rows="1"
+            placeholder="Ask a question..."
+            class="bg-transparent w-full p-2 pr-20 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500 resize-none"
+            onInput="this.parentNode.dataset.replicatedValue = this.value"
+          ></textarea>
+          <!-- Buttons inside the textarea wrapper -->
+          <div class="absolute right-2 top-1/2 transform -translate-y-1/2 flex justify-end gap-2">
+            <button id="select-files-button" title="Add Files" class="rounded w-6 h-6 p-1 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paperclip"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+            </button>
+            <button id="ask-button" title="Submit Prompt" class="rounded w-6 h-6 p-1 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-horizontal"><path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"/><path d="M6 12h16"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{scriptUri}}"></script>
+  </body>
+</html>

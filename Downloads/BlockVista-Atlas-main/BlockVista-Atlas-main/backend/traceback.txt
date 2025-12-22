@@ -1,0 +1,51 @@
+Traceback (most recent call last):
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2505, in get_property
+    return self._props[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 'investor'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\scripts\populate_real_data_for_app.py", line 144, in <module>
+    populate_app_models()
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\scripts\populate_real_data_for_app.py", line 35, in populate_app_models
+    top_schemes_query = session.query(
+                        ^^^^^^^^^^^^^^
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2912, in query
+    return self._query_cls(entities, self, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 276, in __init__
+    self._set_entities(entities)
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 288, in _set_entities
+    self._raw_columns = [
+                        ^
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 289, in <listcomp>
+    coercions.expect(
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\sql\coercions.py", line 406, in expect
+    insp._post_inspect
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 1260, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+                                           ^^^^^^^^^^^^^^
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2707, in _post_inspect
+    self._check_configure()
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2386, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4199, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4240, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2403, in _post_configure_properties
+    prop.init()
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\interfaces.py", line 579, in init
+    self.do_init()
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\relationships.py", line 1643, in do_init
+    self._generate_backref()
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\relationships.py", line 2129, in _generate_backref
+    self._add_reverse_property(self.back_populates)
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\relationships.py", line 1574, in _add_reverse_property
+    other = self.mapper.get_property(key, _configure_mappers=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\backend\venv\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2507, in get_property
+    raise sa_exc.InvalidRequestError(
+sqlalchemy.exc.InvalidRequestError: Mapper 'Mapper[SyntheticTransaction(synthetic_transactions)]' has no property 'investor'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.

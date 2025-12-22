@@ -1,0 +1,31 @@
+[2025-07-12T07:41:51.504Z] [INFO] Graphics Vendors: Intel Corporation
+[2025-07-12T07:41:51.504Z] [INFO] CPU: GenuineIntel - 11th Gen Intel(R) Core(TM) i5-1155G7 @ 2.50GHz
+[2025-07-12T07:41:51.504Z] [INFO] Graphics Models: Intel(R) Iris(R) Xe Graphics
+[2025-07-12T07:41:51.505Z] [INFO] Supported: CPU,IntelNPU
+[2025-07-12T07:41:51.705Z] [INFO] Command registration.
+[2025-07-12T07:41:52.511Z] [INFO] Loading View: catalogModels
+[2025-07-12T07:41:53.449Z] [INFO] Connected to agent:Inference.Service.Agent pipe after retries:1
+[2025-07-12T07:41:53.450Z] [INFO] Agent startup completed...
+[2025-07-12T07:41:53.451Z] [INFO] Agent unlocked
+[2025-07-12T07:41:54.640Z] [INFO] telemetry event:activate_extension sent
+[2025-07-12T07:41:59.151Z] [DEBUG] Fetching models from Azure AI Foundry catalog
+[2025-07-12T07:41:59.635Z] [DEBUG] Successfully fetched 114 models from Azure AI Foundry catalog
+[2025-07-12T07:41:59.635Z] [DEBUG] Fetching configured models from foundry extension
+[2025-07-12T07:42:00.307Z] [DEBUG] Successfully fetched 0 configured models
+[2025-07-12T07:44:41.803Z] [INFO] Connected to agent:WorkspaceAutomation.Agent pipe after retries:1
+[2025-07-12T07:44:41.804Z] [INFO] Agent startup completed...
+[2025-07-12T07:44:41.805Z] [INFO] Agent unlocked
+[2025-07-12T07:44:41.813Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:41.8125356+05:30 Starting download for model Uri:microsoft/Phi-4-mini-instruct-onnx with revision:main to directory:C:\Users\ssang/.aitk/models\microsoft/Phi-4-mini-instruct-onnx buffer Size:(null).
+[2025-07-12T07:44:42.147Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:42.1467569+05:30 Starting file download from repository path:microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/added_tokens.json.
+[2025-07-12T07:44:42.494Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:42.4935636+05:30 File download from repository path microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/added_tokens.json completed.
+[2025-07-12T07:44:42.494Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:42.4939924+05:30 Starting file download from repository path:microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/config.json.
+[2025-07-12T07:44:42.719Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:42.719281+05:30 File download from repository path microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/config.json completed.
+[2025-07-12T07:44:42.720Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:42.719966+05:30 Starting file download from repository path:microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/configuration_phi3.py.
+[2025-07-12T07:44:42.966Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:42.9664327+05:30 File download from repository path microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/configuration_phi3.py completed.
+[2025-07-12T07:44:42.967Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:42.9668089+05:30 Starting file download from repository path:microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/genai_config.json.
+[2025-07-12T07:44:43.218Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:43.2188312+05:30 File download from repository path microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/genai_config.json completed.
+[2025-07-12T07:44:43.219Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:43.2192518+05:30 Starting file download from repository path:microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/merges.txt.
+[2025-07-12T07:44:43.998Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:43.9976852+05:30 File download from repository path microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/merges.txt completed.
+[2025-07-12T07:44:43.998Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:43.9980818+05:30 Starting file download from repository path:microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/model.onnx.
+[2025-07-12T07:44:57.444Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:57.444395+05:30 File download from repository path microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/model.onnx completed.
+[2025-07-12T07:44:57.444Z] [INFO] Information: WorkspaceAutomation.Catalog.HuggingFaceClientProvider [0]  2025-07-12T13:14:57.4449276+05:30 Starting file download from repository path:microsoft/Phi-4-mini-instruct-onnx/resolve/main/cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4/model.onnx.data.

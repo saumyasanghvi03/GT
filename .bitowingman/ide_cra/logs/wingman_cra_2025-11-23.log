@@ -1,0 +1,4 @@
+[2025-11-23T07:07:46.668Z] [INFO] Starting cleanup of old log folders
+[2025-11-23T07:07:46.668Z] [INFO] Log folder cleanup completed | {"totalFolders":1,"deletedFolders":0}
+[2025-11-23T07:18:36.592Z] [INFO] Starting cleanup of old log folders
+[2025-11-23T07:18:36.593Z] [INFO] Log folder cleanup completed | {"totalFolders":1,"deletedFolders":0}

@@ -1,0 +1,24 @@
+Information: Microsoft.Neutron.OpenAI.Provider.OpenAIServiceProviderOnnx[0]
+   01:11:52.94 0 OpenAIService for type:OpenAIServiceProviderOnnx
+Information: Microsoft.Neutron.OpenAI.Provider.OpenAIServiceProviderNIM[0]
+   01:11:52.94 0 OpenAIService for type:OpenAIServiceProviderNIM
+Information: Microsoft.Neutron.Rpc.Service.JsonRpcService[0]
+   01:11:52.94 0 json-rpc-service running
+Information: Microsoft.Neutron.Rpc.Service.JsonRpcService[2305]
+   01:11:52.94 accept_pipe_connections Accepting pipe connections pipeName:inference_agent
+Information: Microsoft.Hosting.Lifetime[14]
+   01:11:52.95 ListeningOnAddress Now listening on: http://localhost:5272
+Information: Microsoft.Hosting.Lifetime[0]
+   01:11:52.95 0 Application started. Press Ctrl+C to shut down.
+Information: Microsoft.Hosting.Lifetime[0]
+   01:11:52.95 0 Hosting environment: Production
+Information: Microsoft.Hosting.Lifetime[0]
+   01:11:52.95 0 Content root path: c:\Users\ssang\.vscode\extensions\ms-windows-ai-studio.windows-ai-studio-0.16.1-win32-x64\bin\
+Information: Microsoft.Neutron.Rpc.Service.JsonRpcService[2306]
+   01:11:53.45 accept_pipe_incoming Accepting pipe incoming pipeName:inference_agent numOfSession:1
+Information: AgentRpc-pipe-#1[4679]
+   01:18:52.71 stream_disconnected Stream disconnected
+Information: Microsoft.Neutron.Rpc.Service.KeepAliveService[0]
+   01:19:22.63 0 StopApplication
+Information: Microsoft.Hosting.Lifetime[0]
+   01:19:22.63 0 Application is shutting down...

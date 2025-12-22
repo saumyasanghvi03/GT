@@ -1,0 +1,1795 @@
+{
+  "version": 1,
+  "savedAt": "2025-11-06T22:12:32.601423+05:30",
+  "models": [
+    {
+      "name": "phi-4-openvino-gpu:1",
+      "displayName": "phi-4-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/phi-4-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|user|\u003E\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|assistant|\u003E\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|user|\u003E\n{Content}\u003C|im_end|\u003E\n\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 9046,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-4",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-4/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-4/versions/7",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-4-generic-gpu:1",
+      "displayName": "Phi-4-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-4-generic-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|user|\u003E\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|assistant|\u003E\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|user|\u003E\n{Content}\u003C|im_end|\u003E\n\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 8570,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-4",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/phi-4/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-4/versions/7",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-4-generic-cpu:1",
+      "displayName": "Phi-4-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-4-generic-cpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|user|\u003E\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|assistant|\u003E\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|user|\u003E\n{Content}\u003C|im_end|\u003E\n\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 10403,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-4",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/phi-4/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-4/versions/7",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Mistral-7B-Instruct-v0-2-openvino-gpu:1",
+      "displayName": "Mistral-7B-Instruct-v0-2-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Mistral-7B-Instruct-v0-2-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003Cs\u003E",
+        "user": "[INST]\n{Content}\n[/INST]",
+        "assistant": "{Content}\u003C/s\u003E",
+        "prompt": "[INST]\n{Content}\n[/INST]"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 4374,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "mistral-7b-v0.2",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://www.apache.org/licenses/LICENSE-2.0.html\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/mistralai-Mistral-7B-Instruct-v0-2/versions/6",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "mistralai-Mistral-7B-Instruct-v0-2-generic-gpu:1",
+      "displayName": "mistralai-Mistral-7B-Instruct-v0-2-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/mistralai-Mistral-7B-Instruct-v0-2-generic-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "prompt": "[INST]\n{Content}\n[/INST]",
+        "assistant": "{Content}\u003C/s\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 4167,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "mistral-7b-v0.2",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://www.apache.org/licenses/LICENSE-2.0.html\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/mistralai-Mistral-7B-Instruct-v0-2/versions/6",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "mistralai-Mistral-7B-Instruct-v0-2-generic-cpu:2",
+      "displayName": "mistralai-Mistral-7B-Instruct-v0-2-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/mistralai-Mistral-7B-Instruct-v0-2-generic-cpu/versions/2",
+      "version": "2",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003Cs\u003E",
+        "user": "[INST]\n{Content}\n[/INST]",
+        "assistant": "{Content}\u003C/s\u003E",
+        "prompt": "[INST]\n{Content}\n[/INST]"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 4167,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "mistral-7b-v0.2",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://www.apache.org/licenses/LICENSE-2.0.html\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/mistralai-Mistral-7B-Instruct-v0-2/versions/6",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-3.5-mini-instruct-openvino-gpu:1",
+      "displayName": "Phi-3.5-mini-instruct-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-3.5-mini-instruct-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E\n{Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E\n{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E\n\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 1993,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-3.5-mini",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-3.5-mini-instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-3.5-mini-instruct/versions/6",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-3.5-mini-instruct-generic-gpu:1",
+      "displayName": "Phi-3.5-mini-instruct-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-3.5-mini-instruct-generic-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "prompt": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E\n\u003C|assistant|\u003E",
+        "assistant": "\u003C|assistant|\u003E\n{Content}\u003C|end|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 2211,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-3.5-mini",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-3.5-mini-instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-3.5-mini-instruct/versions/6",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-3.5-mini-instruct-generic-cpu:1",
+      "displayName": "Phi-3.5-mini-instruct-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-3.5-mini-instruct-generic-cpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "prompt": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E\n\u003C|assistant|\u003E",
+        "assistant": "\u003C|assistant|\u003E\n{Content}\u003C|end|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 2590,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-3.5-mini",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-3.5-mini-instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-3.5-mini-instruct/versions/6",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-3-mini-128k-instruct-openvino-gpu:1",
+      "displayName": "Phi-3-mini-128k-instruct-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-3-mini-128k-instruct-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E\n{Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E\n{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E\n\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 2328,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-3-mini-128k",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-3-mini-128k-instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-3-mini-128k-instruct/versions/13",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-3-mini-128k-instruct-generic-gpu:1",
+      "displayName": "Phi-3-mini-128k-instruct-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-3-mini-128k-instruct-generic-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E\n{Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E\n{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E\n\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 2181,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-3-mini-128k",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-3-mini-128k-instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-3-mini-128k-instruct/versions/13",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-3-mini-128k-instruct-generic-cpu:2",
+      "displayName": "Phi-3-mini-128k-instruct-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-3-mini-128k-instruct-generic-cpu/versions/2",
+      "version": "2",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E\n{Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E\n{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E\n\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 2600,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-3-mini-128k",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-3-mini-128k-instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-3-mini-128k-instruct/versions/13",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-3-mini-4k-instruct-openvino-gpu:1",
+      "displayName": "Phi-3-mini-4k-instruct-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-3-mini-4k-instruct-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E\n{Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E\n{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E\n\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 2060,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-3-mini-4k",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-3-mini-4k-instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-3-mini-4k-instruct/versions/15",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-3-mini-4k-instruct-generic-gpu:1",
+      "displayName": "Phi-3-mini-4k-instruct-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-3-mini-4k-instruct-generic-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E\n{Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E\n{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E\n\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 2181,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-3-mini-4k",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-3-mini-4k-instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-3-mini-4k-instruct/versions/15",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-3-mini-4k-instruct-generic-cpu:2",
+      "displayName": "Phi-3-mini-4k-instruct-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-3-mini-4k-instruct-generic-cpu/versions/2",
+      "version": "2",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E\n{Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E\n{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E\n{Content}\u003C|end|\u003E\n\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 2590,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-3-mini-4k",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-3-mini-4k-instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-3-mini-4k-instruct/versions/15",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-14B-openvino-gpu:1",
+      "displayName": "DeepSeek-R1-Distill-Qwen-14B-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/DeepSeek-R1-Distill-Qwen-14B-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "assistant": "{Content}",
+        "prompt": "\\u003C\\uFF5CUser\\uFF5C\\u003E{Content}\\u003C\\uFF5CAssistant\\uFF5C\\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 8057,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "deepseek-r1-14b",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/deepseek-r1-distill-qwen-14b/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "deepseek-r1-distill-qwen-14b-generic-gpu:3",
+      "displayName": "deepseek-r1-distill-qwen-14b-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/deepseek-r1-distill-qwen-14b-generic-gpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "assistant": "{Content}",
+        "prompt": "\\u003C\\uFF5CUser\\uFF5C\\u003E{Content}\\u003C\\uFF5CAssistant\\uFF5C\\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 10516,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "deepseek-r1-14b",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/deepseek-r1-distill-qwen-14b/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "deepseek-r1-distill-qwen-14b-generic-cpu:3",
+      "displayName": "deepseek-r1-distill-qwen-14b-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/deepseek-r1-distill-qwen-14b-generic-cpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "assistant": "{Content}",
+        "prompt": "\\u003C\\uFF5CUser\\uFF5C\\u003E{Content}\\u003C\\uFF5CAssistant\\uFF5C\\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 11786,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "deepseek-r1-14b",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/deepseek-r1-distill-qwen-14b/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-7B-openvino-gpu:1",
+      "displayName": "DeepSeek-R1-Distill-Qwen-7B-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/DeepSeek-R1-Distill-Qwen-7B-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "assistant": "{Content}",
+        "prompt": "\\u003C\\uFF5CUser\\uFF5C\\u003E{Content}\\u003C\\uFF5CAssistant\\uFF5C\\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 4295,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "deepseek-r1-7b",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/deepseek-r1-distill-qwen-7b/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "deepseek-r1-distill-qwen-7b-generic-gpu:3",
+      "displayName": "deepseek-r1-distill-qwen-7b-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/deepseek-r1-distill-qwen-7b-generic-gpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "assistant": "{Content}",
+        "prompt": "\\u003C\\uFF5CUser\\uFF5C\\u003E{Content}\\u003C\\uFF5CAssistant\\uFF5C\\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 5713,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "deepseek-r1-7b",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/deepseek-r1-distill-qwen-7b/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "deepseek-r1-distill-qwen-7b-generic-cpu:3",
+      "displayName": "deepseek-r1-distill-qwen-7b-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/deepseek-r1-distill-qwen-7b-generic-cpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "assistant": "{Content}",
+        "prompt": "\\u003C\\uFF5CUser\\uFF5C\\u003E{Content}\\u003C\\uFF5CAssistant\\uFF5C\\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 6584,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "deepseek-r1-7b",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/deepseek-r1-distill-qwen-7b/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-0.5b-instruct-openvino-gpu:1",
+      "displayName": "qwen2.5-0.5b-instruct-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-0.5b-instruct-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 366,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-0.5b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-0.5b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-0.5b-instruct-generic-gpu:3",
+      "displayName": "qwen2.5-0.5b-instruct-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-0.5b-instruct-generic-gpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 700,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-0.5b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-0.5b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-0.5b-instruct-generic-cpu:3",
+      "displayName": "qwen2.5-0.5b-instruct-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-0.5b-instruct-generic-cpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 822,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-0.5b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-0.5b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-1.5b-instruct-openvino-gpu:1",
+      "displayName": "qwen2.5-1.5b-instruct-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-1.5b-instruct-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 1019,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-1.5b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-1.5b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-1.5b-instruct-generic-gpu:3",
+      "displayName": "qwen2.5-1.5b-instruct-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-1.5b-instruct-generic-gpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 1546,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-1.5b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-1.5b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-1.5b-instruct-generic-cpu:3",
+      "displayName": "qwen2.5-1.5b-instruct-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-1.5b-instruct-generic-cpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 1822,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-1.5b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-1.5b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-coder-0.5b-instruct-openvino-gpu:1",
+      "displayName": "qwen2.5-coder-0.5b-instruct-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-coder-0.5b-instruct-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 365,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-coder-0.5b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-coder-0.5b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-coder-0.5b-instruct-generic-gpu:3",
+      "displayName": "qwen2.5-coder-0.5b-instruct-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-coder-0.5b-instruct-generic-gpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 528,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-coder-0.5b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-coder-0.5b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-coder-0.5b-instruct-generic-cpu:3",
+      "displayName": "qwen2.5-coder-0.5b-instruct-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-coder-0.5b-instruct-generic-cpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 822,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-coder-0.5b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-coder-0.5b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-coder-7b-instruct-openvino-gpu:1",
+      "displayName": "qwen2.5-coder-7b-instruct-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-coder-7b-instruct-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 4911,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-coder-7b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-coder-7b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-coder-7b-instruct-generic-gpu:3",
+      "displayName": "qwen2.5-coder-7b-instruct-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-coder-7b-instruct-generic-gpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 4843,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-coder-7b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-coder-7b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-coder-7b-instruct-generic-cpu:3",
+      "displayName": "qwen2.5-coder-7b-instruct-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-coder-7b-instruct-generic-cpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 6307,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-coder-7b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-coder-7b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-coder-1.5b-instruct-openvino-gpu:1",
+      "displayName": "qwen2.5-coder-1.5b-instruct-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-coder-1.5b-instruct-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 1018,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-coder-1.5b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-coder-1.5b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-coder-1.5b-instruct-generic-gpu:3",
+      "displayName": "qwen2.5-coder-1.5b-instruct-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-coder-1.5b-instruct-generic-gpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 1280,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-coder-1.5b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-coder-1.5b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-coder-1.5b-instruct-generic-cpu:3",
+      "displayName": "qwen2.5-coder-1.5b-instruct-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-coder-1.5b-instruct-generic-cpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 1822,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-coder-1.5b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-coder-1.5b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "phi-4-mini-instruct-openvino-gpu:1",
+      "displayName": "phi-4-mini-instruct-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/phi-4-mini-instruct-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E{Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E{Content}\u003C|end|\u003E\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 2205,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-4-mini",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-4-mini-instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-4-mini-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-4-mini-instruct-generic-gpu:4",
+      "displayName": "Phi-4-mini-instruct-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-4-mini-instruct-generic-gpu/versions/4",
+      "version": "4",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E{Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E{Content}\u003C|end|\u003E\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 3809,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-4-mini",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-4-mini-instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-4-mini-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-4-mini-instruct-generic-cpu:4",
+      "displayName": "Phi-4-mini-instruct-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-4-mini-instruct-generic-cpu/versions/4",
+      "version": "4",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003E{Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E{Content}\u003C|end|\u003E\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 4915,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-4-mini",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-4-mini-instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-4-mini-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-4-mini-reasoning-openvino-gpu:1",
+      "displayName": "Phi-4-mini-reasoning-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-4-mini-reasoning-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003EYour name is Phi, an AI math expert developed by Microsoft. {Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E{Content}\u003C|end|\u003E\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 2532,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-4-mini-reasoning",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-4-mini-reasoning/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-4-mini-reasoning-generic-gpu:2",
+      "displayName": "Phi-4-mini-reasoning-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-4-mini-reasoning-generic-gpu/versions/2",
+      "version": "2",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003EYour name is Phi, an AI math expert developed by Microsoft. {Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E{Content}\u003C|end|\u003E\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 3225,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-4-mini-reasoning",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-4-mini-reasoning/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "Phi-4-mini-reasoning-generic-cpu:2",
+      "displayName": "Phi-4-mini-reasoning-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/Phi-4-mini-reasoning-generic-cpu/versions/2",
+      "version": "2",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|system|\u003EYour name is Phi, an AI math expert developed by Microsoft. {Content}\u003C|end|\u003E",
+        "user": "\u003C|user|\u003E{Content}\u003C|end|\u003E",
+        "assistant": "\u003C|assistant|\u003E{Content}\u003C|end|\u003E",
+        "prompt": "\u003C|user|\u003E{Content}\u003C|end|\u003E\u003C|assistant|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 4628,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "phi-4-mini-reasoning",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/Phi-4-mini-reasoning/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-14b-instruct-openvino-gpu:1",
+      "displayName": "qwen2.5-14b-instruct-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-14b-instruct-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 4903,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-14b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-14B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-14b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-14b-instruct-generic-gpu:3",
+      "displayName": "qwen2.5-14b-instruct-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-14b-instruct-generic-gpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 9523,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-14b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-14B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-14b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-14b-instruct-generic-cpu:3",
+      "displayName": "qwen2.5-14b-instruct-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-14b-instruct-generic-cpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 11325,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-14b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-14B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-14b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-7b-instruct-openvino-gpu:1",
+      "displayName": "qwen2.5-7b-instruct-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-7b-instruct-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 4903,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-7b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-7b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-7b-instruct-generic-gpu:3",
+      "displayName": "qwen2.5-7b-instruct-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-7b-instruct-generic-gpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 5324,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-7b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-7b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-7b-instruct-generic-cpu:3",
+      "displayName": "qwen2.5-7b-instruct-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-7b-instruct-generic-cpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 6307,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-7b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-7b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-coder-14b-instruct-openvino-gpu:1",
+      "displayName": "qwen2.5-coder-14b-instruct-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-coder-14b-instruct-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 9296,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-coder-14b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-coder-14b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-coder-14b-instruct-generic-gpu:3",
+      "displayName": "qwen2.5-coder-14b-instruct-generic-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-coder-14b-instruct-generic-gpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "WebGpuExecutionProvider"
+      },
+      "fileSizeMb": 9000,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-coder-14b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-coder-14b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "qwen2.5-coder-14b-instruct-generic-cpu:3",
+      "displayName": "qwen2.5-coder-14b-instruct-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/qwen2.5-coder-14b-instruct-generic-cpu/versions/3",
+      "version": "3",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "system": "\u003C|im_start|\u003Esystem\n{Content}\u003C|im_end|\u003E",
+        "user": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E",
+        "assistant": "\u003C|im_start|\u003Eassistant\n{Content}\u003C|im_end|\u003E",
+        "prompt": "\u003C|im_start|\u003Euser\n{Content}\u003C|im_end|\u003E\n\u003C|im_start|\u003Eassistant"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": false,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 11325,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "qwen2.5-coder-14b",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/qwen2.5-coder-14b-instruct/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "openai-whisper-large-v3-turbo-generic-cpu:1",
+      "displayName": "openai-whisper-large-v3-turbo-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/openai-whisper-large-v3-turbo-generic-cpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "prompt": "\u003C|startoftranscript|\u003E \u003C|en|\u003E \u003C|transcribe|\u003E \u003C|notimestamps|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "automatic-speech-recognition",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 9000,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "whisper-large-v3-turbo",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at https://www.apache.org/licenses/LICENSE-2.0.html.",
+      "parentModelUri": "azureml://registries/azureml/models/openai-whisper-large-v3-turbo/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "openai-whisper-base-generic-cpu:1",
+      "displayName": "openai-whisper-base-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/openai-whisper-base-generic-cpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "prompt": "\u003C|startoftranscript|\u003E \u003C|en|\u003E \u003C|transcribe|\u003E \u003C|notimestamps|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "automatic-speech-recognition",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 383,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "whisper-base",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at https://www.apache.org/licenses/LICENSE-2.0.html.",
+      "parentModelUri": "azureml://registries/azureml/models/openai-whisper-base/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "openai-whisper-medium-generic-cpu:1",
+      "displayName": "openai-whisper-medium-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/openai-whisper-medium-generic-cpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "prompt": "\u003C|startoftranscript|\u003E \u003C|en|\u003E \u003C|transcribe|\u003E \u003C|notimestamps|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "automatic-speech-recognition",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 3122,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "whisper-medium",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at https://www.apache.org/licenses/LICENSE-2.0.html.",
+      "parentModelUri": "azureml://registries/azureml/models/openai-whisper-medium/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "openai-whisper-small-generic-cpu:1",
+      "displayName": "openai-whisper-small-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/openai-whisper-small-generic-cpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "prompt": "\u003C|startoftranscript|\u003E \u003C|en|\u003E \u003C|transcribe|\u003E \u003C|notimestamps|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "automatic-speech-recognition",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 1079,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "whisper-small",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at https://www.apache.org/licenses/LICENSE-2.0.html.",
+      "parentModelUri": "azureml://registries/azureml/models/openai-whisper-small/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "openai-whisper-tiny-generic-cpu:2",
+      "displayName": "openai-whisper-tiny-generic-cpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/openai-whisper-tiny-generic-cpu/versions/2",
+      "version": "2",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "prompt": "\u003C|startoftranscript|\u003E \u003C|en|\u003E \u003C|transcribe|\u003E \u003C|notimestamps|\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "automatic-speech-recognition",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "CPU",
+        "executionProvider": "CPUExecutionProvider"
+      },
+      "fileSizeMb": 225,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "whisper-tiny",
+      "supportsToolCalling": false,
+      "license": "apache-2.0",
+      "licenseDescription": "This model is provided under the License Terms available at https://www.apache.org/licenses/LICENSE-2.0.html.",
+      "parentModelUri": "azureml://registries/azureml/models/openai-whisper-tiny/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-1.5B-openvino-gpu:1",
+      "displayName": "DeepSeek-R1-Distill-Qwen-1.5B-openvino-gpu",
+      "providerType": "AzureFoundry",
+      "uri": "azureml://registries/azureml/models/DeepSeek-R1-Distill-Qwen-1.5B-openvino-gpu/versions/1",
+      "version": "1",
+      "modelType": "ONNX",
+      "promptTemplate": {
+        "assistant": "{Content}",
+        "prompt": "\\u003C\\uFF5CUser\\uFF5C\\u003E{Content}\\u003C\\uFF5CAssistant\\uFF5C\\u003E"
+      },
+      "publisher": "Microsoft",
+      "task": "chat-completion",
+      "testModel": true,
+      "runtime": {
+        "deviceType": "GPU",
+        "executionProvider": "OpenVINOExecutionProvider"
+      },
+      "fileSizeMb": 1352,
+      "modelSettings": {
+        "parameters": []
+      },
+      "alias": "deepseek-r1-1.5b",
+      "supportsToolCalling": false,
+      "license": "MIT",
+      "licenseDescription": "This model is provided under the License Terms available at \u003Chttps://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/blob/main/LICENSE\u003E.",
+      "parentModelUri": "azureml://registries/azureml/models/deepseek-r1-distill-qwen-1.5b/versions/1",
+      "maxOutputTokens": 2048,
+      "minFLVersion": null
+    }
+  ]
+}

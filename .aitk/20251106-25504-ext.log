@@ -1,0 +1,110 @@
+[2025-11-06T18:53:18.999Z] [INFO] Command registration.
+[2025-11-06T18:53:19.018Z] [DEBUG] [m] recreating myModelsRootItem.
+[2025-11-06T18:53:19.021Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.025Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.028Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.029Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.029Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.029Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.029Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.029Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.029Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.030Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.030Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.045Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.046Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.046Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.048Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.048Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.049Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.092Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.092Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.092Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.110Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.277Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:19.2587022+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:2ms
+[2025-11-06T18:53:19.371Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.372Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.372Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.478Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.478Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.478Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.482Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:19.4774087+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:199ms
+[2025-11-06T18:53:19.547Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.548Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.548Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.716Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.716Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.716Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.724Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.725Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:19.725Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:21.377Z] [INFO] Calling Foundry Local REST API: http://localhost:5272/foundry/list
+[2025-11-06T18:53:21.388Z] [DEBUG] Fetching models from Azure AI Foundry catalog
+[2025-11-06T18:53:21.439Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:21.4321679+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:21.876Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:21.6666393+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:200ms
+[2025-11-06T18:53:22.954Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:22.968Z] [DEBUG] Fetching models from Azure AI Foundry catalog
+[2025-11-06T18:53:23.171Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:23.1196538+05:30 Model Phi-4-reasoning-generic-cpu:1 does not have a valid prompt template.
+[2025-11-06T18:53:23.172Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:23.1205728+05:30 Model Phi-4-reasoning-generic-gpu:1 does not have a valid prompt template.
+[2025-11-06T18:53:23.313Z] [DEBUG] Successfully fetched 124 models from Azure AI Foundry catalog
+[2025-11-06T18:53:23.430Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:23.4074378+05:30 Total models fetched across all pages: 57
+[2025-11-06T18:53:23.434Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:23.4100793+05:30 UserAgent:axios/1.11.0 Command:ModelList Status:Success Direct:True  Time:1976ms
+[2025-11-06T18:53:23.782Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:23.588995+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:154ms
+[2025-11-06T18:53:23.815Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:23.7614948+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:24.112Z] [INFO] Calling Foundry Local REST API: http://localhost:5272/foundry/list
+[2025-11-06T18:53:24.171Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:24.1382061+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:24.174Z] [DEBUG] Successfully fetched 124 models from Azure AI Foundry catalog
+[2025-11-06T18:53:24.297Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:24.293114+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:120ms
+[2025-11-06T18:53:24.405Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:24.406Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:24.406Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:24.524Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:24.525Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:24.524Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:24.927Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:24.9260415+05:30 Model Phi-4-reasoning-generic-cpu:1 does not have a valid prompt template.
+[2025-11-06T18:53:24.927Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:24.9263775+05:30 Model Phi-4-reasoning-generic-gpu:1 does not have a valid prompt template.
+[2025-11-06T18:53:25.199Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:25.1987091+05:30 Total models fetched across all pages: 57
+[2025-11-06T18:53:25.215Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:25.1994321+05:30 UserAgent:axios/1.11.0 Command:ModelList Status:Success Direct:True  Time:1061ms
+[2025-11-06T18:53:25.357Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:25.3491922+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:125ms
+[2025-11-06T18:53:25.367Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:25.3592314+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:25.554Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:25.555Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:25.554Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:25.555Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:30.611Z] [INFO] Loading View: catalogModels
+[2025-11-06T18:53:30.726Z] [DEBUG] Fetching models from Azure AI Foundry catalog
+[2025-11-06T18:53:30.742Z] [INFO] Calling Foundry Local REST API: http://localhost:5272/foundry/list
+[2025-11-06T18:53:30.780Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:30.7628487+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:30.907Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:30.8960896+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:30.961Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:30.9503051+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:166ms
+[2025-11-06T18:53:31.079Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:31.0670916+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:158ms
+[2025-11-06T18:53:31.716Z] [DEBUG] Successfully fetched 124 models from Azure AI Foundry catalog
+[2025-11-06T18:53:32.189Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:32.0527736+05:30 Model Phi-4-reasoning-generic-cpu:1 does not have a valid prompt template.
+[2025-11-06T18:53:32.190Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:32.0532144+05:30 Model Phi-4-reasoning-generic-gpu:1 does not have a valid prompt template.
+[2025-11-06T18:53:32.341Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:32.3304261+05:30 Total models fetched across all pages: 57
+[2025-11-06T18:53:32.341Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:32.3311052+05:30 UserAgent:axios/1.11.0 Command:ModelList Status:Success Direct:True  Time:1568ms
+[2025-11-06T18:53:32.521Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:32.5098226+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:168ms
+[2025-11-06T18:53:32.527Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:32.5222724+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:58.438Z] [DEBUG] [m] start to refresh. options=undefined
+[2025-11-06T18:53:58.438Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:58.439Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:58.483Z] [DEBUG] [m] start to refresh. options=undefined
+[2025-11-06T18:53:59.739Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:59.740Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:59.740Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:53:59.740Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-11-06T18:54:06.421Z] [INFO] Loading View: modelPlayground
+[2025-11-06T18:54:06.623Z] [DEBUG] Fetching models from Azure AI Foundry catalog
+[2025-11-06T18:54:06.809Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:06.7978863+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:54:06.964Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:06.9628639+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:151ms
+[2025-11-06T18:54:07.388Z] [DEBUG] Successfully fetched 124 models from Azure AI Foundry catalog
+[2025-11-06T18:54:08.193Z] [INFO] Calling Foundry Local REST API: http://localhost:5272/foundry/list
+[2025-11-06T18:54:08.218Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:08.2044448+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:54:08.391Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:08.3897503+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:169ms
+[2025-11-06T18:54:09.925Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:24:09.2416523+05:30 Model Phi-4-reasoning-generic-cpu:1 does not have a valid prompt template.
+[2025-11-06T18:54:09.928Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:24:09.2420184+05:30 Model Phi-4-reasoning-generic-gpu:1 does not have a valid prompt template.
+[2025-11-06T18:54:09.942Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:24:09.541272+05:30 Total models fetched across all pages: 57
+[2025-11-06T18:54:09.963Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:09.5423164+05:30 UserAgent:axios/1.11.0 Command:ModelList Status:Success Direct:True  Time:1338ms
+[2025-11-06T18:54:11.130Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:10.1021642+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:174ms
+[2025-11-06T18:54:11.189Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:11.1637664+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:54:13.045Z] [DEBUG] Starting countTokens. model = "Google/gemini-2.5-flash-preview-05-20", messages = []

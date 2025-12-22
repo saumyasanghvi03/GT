@@ -1,0 +1,75 @@
+[2025-11-06T16:42:24.451Z] [INFO] Command registration.
+[2025-11-06T16:42:24.609Z] [DEBUG] Fetching models from Azure AI Foundry catalog
+[2025-11-06T16:42:25.446Z] [INFO] Connected to agent:Inference.Service.Agent pipe after retries:0
+[2025-11-06T16:42:25.446Z] [INFO] Agent startup completed...
+[2025-11-06T16:42:25.452Z] [INFO] Agent unlocked
+[2025-11-06T16:42:25.805Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-11-06T22:12:25.7779417+05:30 Downloading provider 1/1: OpenVINOExecutionProvider
+[2025-11-06T16:42:25.855Z] [DEBUG] Successfully fetched 124 models from Azure AI Foundry catalog
+[2025-11-06T16:42:25.879Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-11-06T22:12:25.8754694+05:30 Registering provider 1/1: OpenVINOExecutionProvider
+[2025-11-06T16:42:27.013Z] [DEBUG] Fetching models from Azure AI Foundry catalog
+[2025-11-06T16:42:27.054Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-11-06T22:12:27.0530332+05:30 Successfully autoregistered OpenVINOExecutionProvider
+[2025-11-06T16:42:27.056Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-11-06T22:12:27.0542163+05:30 Finished attempt to autoregister certified EPs; finished in 00:00:01.6490798
+[2025-11-06T16:42:27.089Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-11-06T22:12:27.0823395+05:30 Successfully downloaded and registered the following EPs: OpenVINOExecutionProvider.
+Valid EPs: CPUExecutionProvider, OpenVINOExecutionProvider, WebGpuExecutionProvider, OpenVINOExecutionProvider.AUTO
+
+[2025-11-06T16:42:27.863Z] [DEBUG] Successfully fetched 124 models from Azure AI Foundry catalog
+[2025-11-06T16:42:30.471Z] [INFO] Calling Foundry Local REST API: http://localhost:5272/foundry/list
+[2025-11-06T16:42:30.576Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-06T22:12:30.5753888+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T16:42:30.604Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-06T22:12:30.6043539+05:30 Loaded cached model info for 34 models. SavedAt:08-10-2025 07:36:33
+[2025-11-06T16:42:30.630Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-06T22:12:30.6302334+05:30 Valid devices: CPU, GPU
+[2025-11-06T16:42:30.636Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-06T22:12:30.6306723+05:30 Valid EPs: CPUExecutionProvider, OpenVINOExecutionProvider, WebGpuExecutionProvider, OpenVINOExecutionProvider.AUTO
+[2025-11-06T16:42:30.874Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-06T22:12:30.8704227+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:288ms
+[2025-11-06T16:42:32.334Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-06T22:12:32.334682+05:30 Model Phi-4-reasoning-generic-cpu:1 does not have a valid prompt template.
+[2025-11-06T16:42:32.335Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-06T22:12:32.335009+05:30 Model Phi-4-reasoning-generic-gpu:1 does not have a valid prompt template.
+[2025-11-06T16:42:32.601Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-06T22:12:32.6009455+05:30 Total models fetched across all pages: 57
+[2025-11-06T16:42:32.602Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-06T22:12:32.6025556+05:30 UserAgent:axios/1.11.0 Command:ModelList Status:Success Direct:True  Time:1997ms
+[2025-11-06T16:42:32.802Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-06T22:12:32.7953402+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:185ms
+[2025-11-06T16:42:32.806Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-06T22:12:32.8039519+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T16:42:32.944Z] [INFO] Calling Foundry Local REST API: http://localhost:5272/foundry/list
+[2025-11-06T16:42:32.956Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-06T22:12:32.9518641+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T16:42:33.161Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-06T22:12:33.1533587+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:192ms
+[2025-11-06T16:42:33.455Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-06T22:12:33.4538829+05:30 Model Phi-4-reasoning-generic-cpu:1 does not have a valid prompt template.
+[2025-11-06T16:42:33.456Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-06T22:12:33.4542784+05:30 Model Phi-4-reasoning-generic-gpu:1 does not have a valid prompt template.
+[2025-11-06T16:42:33.721Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-06T22:12:33.7206184+05:30 Total models fetched across all pages: 57
+[2025-11-06T16:42:33.743Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-06T22:12:33.743126+05:30 UserAgent:axios/1.11.0 Command:ModelList Status:Success Direct:True  Time:791ms
+[2025-11-06T16:42:34.012Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-06T22:12:34.0100658+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:255ms
+[2025-11-06T16:42:34.016Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-06T22:12:34.0135835+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:19.143Z] [INFO] Information: Microsoft.Neutron.Rpc.Service.JsonRpcService [2306]  2025-11-07T00:23:19.113009+05:30 Accepting pipe incoming pipeName:ai.dee3ada2b4304ec4062d4f778427bc1f numOfSession:2
+[2025-11-06T18:53:19.260Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:19.2587022+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:2ms
+[2025-11-06T18:53:19.478Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:19.4774087+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:199ms
+[2025-11-06T18:53:21.433Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:21.4321679+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:21.672Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:21.6666393+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:200ms
+[2025-11-06T18:53:23.158Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:23.1196538+05:30 Model Phi-4-reasoning-generic-cpu:1 does not have a valid prompt template.
+[2025-11-06T18:53:23.159Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:23.1205728+05:30 Model Phi-4-reasoning-generic-gpu:1 does not have a valid prompt template.
+[2025-11-06T18:53:23.407Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:23.4074378+05:30 Total models fetched across all pages: 57
+[2025-11-06T18:53:23.410Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:23.4100793+05:30 UserAgent:axios/1.11.0 Command:ModelList Status:Success Direct:True  Time:1976ms
+[2025-11-06T18:53:23.592Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:23.588995+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:154ms
+[2025-11-06T18:53:23.762Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:23.7614948+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:24.139Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:24.1382061+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:24.293Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:24.293114+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:120ms
+[2025-11-06T18:53:24.926Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:24.9260415+05:30 Model Phi-4-reasoning-generic-cpu:1 does not have a valid prompt template.
+[2025-11-06T18:53:24.927Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:24.9263775+05:30 Model Phi-4-reasoning-generic-gpu:1 does not have a valid prompt template.
+[2025-11-06T18:53:25.208Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:25.1987091+05:30 Total models fetched across all pages: 57
+[2025-11-06T18:53:25.212Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:25.1994321+05:30 UserAgent:axios/1.11.0 Command:ModelList Status:Success Direct:True  Time:1061ms
+[2025-11-06T18:53:25.349Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:25.3491922+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:125ms
+[2025-11-06T18:53:25.359Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:25.3592314+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:30.763Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:30.7628487+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:30.896Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:30.8960896+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:53:30.959Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:30.9503051+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:166ms
+[2025-11-06T18:53:31.073Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:31.0670916+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:158ms
+[2025-11-06T18:53:32.054Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:32.0527736+05:30 Model Phi-4-reasoning-generic-cpu:1 does not have a valid prompt template.
+[2025-11-06T18:53:32.054Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:32.0532144+05:30 Model Phi-4-reasoning-generic-gpu:1 does not have a valid prompt template.
+[2025-11-06T18:53:32.332Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:23:32.3304261+05:30 Total models fetched across all pages: 57
+[2025-11-06T18:53:32.333Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:32.3311052+05:30 UserAgent:axios/1.11.0 Command:ModelList Status:Success Direct:True  Time:1568ms
+[2025-11-06T18:53:32.515Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:32.5098226+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:168ms
+[2025-11-06T18:53:32.523Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:23:32.5222724+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:54:06.798Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:06.7978863+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:54:06.963Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:06.9628639+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:151ms
+[2025-11-06T18:54:08.204Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:08.2044448+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-11-06T18:54:08.390Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:08.3897503+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:169ms
+[2025-11-06T18:54:09.242Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:24:09.2416523+05:30 Model Phi-4-reasoning-generic-cpu:1 does not have a valid prompt template.
+[2025-11-06T18:54:09.243Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:24:09.2420184+05:30 Model Phi-4-reasoning-generic-gpu:1 does not have a valid prompt template.
+[2025-11-06T18:54:09.644Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-11-07T00:24:09.541272+05:30 Total models fetched across all pages: 57
+[2025-11-06T18:54:09.661Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:09.5423164+05:30 UserAgent:axios/1.11.0 Command:ModelList Status:Success Direct:True  Time:1338ms
+[2025-11-06T18:54:10.104Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:10.1021642+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:174ms
+[2025-11-06T18:54:11.168Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-11-07T00:24:11.1637664+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms

@@ -1,0 +1,30 @@
+
+> blockvista-atlas-frontend@0.1.0 lint
+> eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0
+
+
+C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\frontend\src\components\InitializationScreen.tsx
+  80:25  error  Unused eslint-disable directive (no problems were reported)
+
+C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\frontend\src\context\AuthContext.tsx
+  62:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\frontend\src\pages\AmcDashboard.tsx
+  103:75  error  Parsing error: Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\frontend\src\pages\InvestorBehavior.tsx
+  68:21  error  Unused eslint-disable directive (no problems were reported)
+
+C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\frontend\src\pages\Overview.tsx
+   86:17  error  Unused eslint-disable directive (no problems were reported)
+  112:25  error  Unused eslint-disable directive (no problems were reported)
+
+C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\frontend\src\pages\SalesIntelligence.tsx
+  69:45  error  Unused eslint-disable directive (no problems were reported)
+
+C:\Users\ssang\Downloads\BlockVista-Atlas-main\BlockVista-Atlas-main\frontend\src\pages\SuitabilityCompliance.tsx
+  25:65  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 8 problems (7 errors, 1 warning)
+  5 errors and 0 warnings potentially fixable with the `--fix` option.
+

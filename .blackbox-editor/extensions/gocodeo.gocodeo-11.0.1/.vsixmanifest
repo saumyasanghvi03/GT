@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+		<Metadata>
+			<Identity Language="en-US" Id="gocodeo" Version="11.0.1" Publisher="GoCodeo" />
+			<DisplayName>GoCodeo: AI Agent For Vibe Coding</DisplayName>
+			<Description xml:space="preserve">GoCodeo is an AI coding agent for building full-stack apps in minutes, with one-click Vercel deployment and seamless Supabase integration. Integrate GoCodeo with 100+ tools like GitHub, Notion, Stripe and Perplexity through MCP to enable real-time, context-aware actions, every step of the way.</Description>
+			<Tags>mcp,unit-testing,generative-ai,developer tools,openai,chatgpt,gpt-4,python,javascript,code-coverage,code-refactoring,ai,ai code snippets,AI copilot,AI-assisted code completion,AI-powered code completion,autocomplete,automated testing,bash,chatbot,chat,code completion,code generation,code hinting,code prediction,code suggestion,code-integrity,coding ai,coding assistant,content assist,cpp,csharp,css,docstring,generate,git,gocodeo,golang,gpt-3,html,intellicode,intellisense,java,jupyter,keybindings,kotlin,method completion,node,node.js,nodejs,objectivec,objective-c,ocaml,perl,php,react,refactor,ruby,rust,snippets,swift,test,typescript,unit test generation,anthropic,assistant,bot,claude,code analysis,codegen,gemini,llm,model,llama,Python,__ext_py,__ext_ipynb,javascriptreact,typescriptreact</Tags>
+			<Categories>Testing,Machine Learning,Data Science,Snippets,Programming Languages,AI,Chat</Categories>
+			<GalleryFlags>Public</GalleryFlags>
+			
+			<Properties>
+				<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.74.0" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace" />
+				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.EnabledApiProposals" Value="" />
+				
+				<Property Id="Microsoft.VisualStudio.Code.ExecutesCode" Value="true" />
+				
+				
+				
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://gocodeo.com" />
+				
+				
+				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free"/>
+
+				
+				
+			</Properties>
+			<License>extension/LICENSE.txt</License>
+			<Icon>extension/build/logoonly.png</Icon>
+		</Metadata>
+		<Installation>
+			<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+		</Installation>
+		<Dependencies/>
+		<Assets>
+			<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+			<Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/readme.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/build/logoonly.png" Addressable="true" />
+		</Assets>
+	</PackageManifest>

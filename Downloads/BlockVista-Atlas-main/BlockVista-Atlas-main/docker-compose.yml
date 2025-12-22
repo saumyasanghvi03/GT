@@ -1,0 +1,69 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  db:
+    image: postgres:15-alpine
+    container_name: blockvista-db
+    environment:
+      POSTGRES_USER: blockvista
+      POSTGRES_PASSWORD: blockvista
+      POSTGRES_DB: blockvista_atlas
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - blockvista-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U blockvista"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: blockvista-backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://blockvista:blockvista@db:5432/blockvista_atlas
+    volumes:
+      - ./backend:/app
+      - ./data:/data
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - blockvista-network
+    restart: unless-stopped
+
+  # Frontend UI
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: blockvista-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    networks:
+      - blockvista-network
+    restart: unless-stopped
+
+networks:
+  blockvista-network:
+    driver: bridge
+
+volumes:
+  postgres_data:

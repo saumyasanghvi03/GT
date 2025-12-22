@@ -1,0 +1,106 @@
+[2025-10-08T02:04:50.867Z] [INFO] Command registration.
+[2025-10-08T02:04:50.882Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.887Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.881Z] [DEBUG] [m] recreating myModelsRootItem.
+[2025-10-08T02:04:50.889Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.892Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.892Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.892Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.895Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.895Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.898Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.892Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.898Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.898Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.916Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.918Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.918Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.924Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.924Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.924Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.941Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.941Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:50.941Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:51.031Z] [DEBUG] Fetching models from Azure AI Foundry catalog
+[2025-10-08T02:04:51.054Z] [INFO] Agent was started by another vscode instance. Waiting for it to finish...
+[2025-10-08T02:04:51.316Z] [INFO] Agent was started by another vscode instance. Waiting for it to finish...
+[2025-10-08T02:04:52.054Z] [INFO] Connected to agent:Inference.Service.Agent pipe after retries:0
+[2025-10-08T02:04:52.055Z] [INFO] Agent startup completed...
+[2025-10-08T02:04:52.057Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.155Z] [INFO] Agent unlocked
+[2025-10-08T02:04:52.230Z] [INFO] Agent startup completed...
+[2025-10-08T02:04:52.231Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.240Z] [INFO] Agent unlocked
+[2025-10-08T02:04:52.271Z] [INFO] Information: Microsoft.Neutron.Rpc.Service.JsonRpcService [2306]  2025-10-08T07:34:52.2346585+05:30 Accepting pipe incoming pipeName:ai.2d6603b0972a6bfe5a0a2b0d32547820 numOfSession:2
+[2025-10-08T02:04:52.369Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.369Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.369Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.480Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.480Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.480Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.509Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.509Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.512Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.509Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.519Z] [DEBUG] Fetching models from Azure AI Foundry catalog
+[2025-10-08T02:04:52.674Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.674Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:52.674Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:53.054Z] [WARNING] Unable to get loaded models
+[2025-10-08T02:04:53.093Z] [INFO] Agent unlocked
+[2025-10-08T02:04:53.244Z] [INFO] Agent unlocked
+[2025-10-08T02:04:53.344Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:53.345Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:53.345Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:53.433Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-10-08T07:34:53.4201468+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:314ms
+[2025-10-08T02:04:53.433Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-10-08T07:34:53.4201468+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:314ms
+[2025-10-08T02:04:53.461Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:53.461Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:53.461Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:53.656Z] [DEBUG] Successfully fetched 122 models from Azure AI Foundry catalog
+[2025-10-08T02:04:55.379Z] [DEBUG] Successfully fetched 122 models from Azure AI Foundry catalog
+[2025-10-08T02:04:55.772Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:55.772Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:55.772Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:55.858Z] [DEBUG] Invalidated foundry accessor cache due to catalogs refresh parameter
+[2025-10-08T02:04:55.858Z] [DEBUG] [m] start to refresh. options=undefined
+[2025-10-08T02:04:57.069Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-10-08T07:34:57.0651298+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-10-08T02:04:57.071Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-10-08T07:34:57.0651298+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-10-08T02:04:57.243Z] [INFO] Calling Foundry Local REST API: http://localhost:5272/foundry/list
+[2025-10-08T02:04:57.280Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-10-08T07:34:57.2759682+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:203ms
+[2025-10-08T02:04:57.280Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-10-08T07:34:57.2759682+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:203ms
+[2025-10-08T02:04:57.664Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:57.664Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:04:57.664Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:06:29.647Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-10-08T07:36:29.6463021+05:30 Registering provider 1/1: OpenVINOExecutionProvider
+[2025-10-08T02:06:29.649Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-10-08T07:36:29.6463021+05:30 Registering provider 1/1: OpenVINOExecutionProvider
+[2025-10-08T02:06:30.657Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-10-08T07:36:30.657142+05:30 Successfully autoregistered OpenVINOExecutionProvider
+[2025-10-08T02:06:30.658Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-10-08T07:36:30.657142+05:30 Successfully autoregistered OpenVINOExecutionProvider
+[2025-10-08T02:06:30.658Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-10-08T07:36:30.6580055+05:30 Finished attempt to autoregister certified EPs; finished in 00:01:38.7219911
+[2025-10-08T02:06:30.658Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-10-08T07:36:30.6580055+05:30 Finished attempt to autoregister certified EPs; finished in 00:01:38.7219911
+[2025-10-08T02:06:30.678Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-10-08T07:36:30.6783778+05:30 Successfully downloaded and registered the following EPs: OpenVINOExecutionProvider.
+Valid EPs: CPUExecutionProvider, OpenVINOExecutionProvider, WebGpuExecutionProvider, OpenVINOExecutionProvider.AUTO
+
+[2025-10-08T02:06:30.679Z] [INFO] Information: Microsoft.Neutron.OpenAI.Provider.WinAppSDKEpDetector [0]  2025-10-08T07:36:30.6783778+05:30 Successfully downloaded and registered the following EPs: OpenVINOExecutionProvider.
+Valid EPs: CPUExecutionProvider, OpenVINOExecutionProvider, WebGpuExecutionProvider, OpenVINOExecutionProvider.AUTO
+
+[2025-10-08T02:06:30.698Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-10-08T07:36:30.6982955+05:30 Valid devices: CPU, GPU
+[2025-10-08T02:06:30.699Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-10-08T07:36:30.6985894+05:30 Valid EPs: CPUExecutionProvider, OpenVINOExecutionProvider, WebGpuExecutionProvider, OpenVINOExecutionProvider.AUTO
+[2025-10-08T02:06:30.699Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-10-08T07:36:30.6982955+05:30 Valid devices: CPU, GPU
+[2025-10-08T02:06:30.699Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-10-08T07:36:30.6985894+05:30 Valid EPs: CPUExecutionProvider, OpenVINOExecutionProvider, WebGpuExecutionProvider, OpenVINOExecutionProvider.AUTO
+[2025-10-08T02:06:33.056Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-10-08T07:36:33.0557897+05:30 Model Phi-4-reasoning-generic-cpu:1 does not have a valid prompt template.
+[2025-10-08T02:06:33.056Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-10-08T07:36:33.055983+05:30 Model Phi-4-reasoning-generic-gpu:1 does not have a valid prompt template.
+[2025-10-08T02:06:33.056Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-10-08T07:36:33.0562861+05:30 Total models fetched across all pages: 34
+[2025-10-08T02:06:33.056Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-10-08T07:36:33.0557897+05:30 Model Phi-4-reasoning-generic-cpu:1 does not have a valid prompt template.
+[2025-10-08T02:06:33.056Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-10-08T07:36:33.055983+05:30 Model Phi-4-reasoning-generic-gpu:1 does not have a valid prompt template.
+[2025-10-08T02:06:33.057Z] [INFO] Information: Microsoft.Neutron.AzureFoundry.AzureFoundryService [0]  2025-10-08T07:36:33.0562861+05:30 Total models fetched across all pages: 34
+[2025-10-08T02:06:33.059Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-10-08T07:36:33.0590274+05:30 UserAgent:axios/1.11.0 Command:ModelList Status:Success Direct:True  Time:2379ms
+[2025-10-08T02:06:33.059Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-10-08T07:36:33.0590274+05:30 UserAgent:axios/1.11.0 Command:ModelList Status:Success Direct:True  Time:2379ms
+[2025-10-08T02:06:33.198Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-10-08T07:36:33.1955011+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:104ms
+[2025-10-08T02:06:33.199Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-10-08T07:36:33.1955011+05:30 UserAgent: Command:ListDownloadedModels Status:Success Direct:True  Time:104ms
+[2025-10-08T02:06:33.200Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:06:33.200Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:06:33.200Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-10-08T07:36:33.1997116+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms
+[2025-10-08T02:06:33.200Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:06:33.200Z] [DEBUG] [m] start to refresh. options={"useCache":true}
+[2025-10-08T02:06:33.201Z] [INFO] Information: Microsoft.Neutron.Telemetry.TelemetryLogger [0]  2025-10-08T07:36:33.1997116+05:30 UserAgent: Command:ListLoadedModels Status:Success Direct:True  Time:0ms

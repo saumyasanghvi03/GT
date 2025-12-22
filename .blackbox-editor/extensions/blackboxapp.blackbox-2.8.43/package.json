@@ -1,0 +1,433 @@
+{
+	"name": "blackbox",
+	"displayName": "BLACKBOXAI #1 AI Coding Agent and Coding Copilot",
+	"description": "BLACKBOX AI is an AI coding assistant that helps developers  by providing real-time code completion, documentation, and debugging suggestions. BLACKBOX AI is also integrated with a variety of developer tools such as Github Gitlab among others, making it easy to use within your existing workflow.",
+	"version": "2.8.43",
+	"publisher": "Blackboxapp",
+	"icon": "icon.png",
+	"homepage": "https://www.useblackbox.io/",
+	"keywords": [
+		"keybindings",
+		"code-recommendation",
+		"copilot",
+		"AI",
+		"github",
+		"chatgpt",
+		"openai",
+		"sonnet",
+		"anthropic",
+		"blackbox.ai",
+		"codex",
+		"co-pilot",
+		"pilot",
+		"autocomplete",
+		"javascript",
+		"python",
+		"typescript",
+		"php",
+		"ruby",
+		"java",
+		"go",
+		"golang",
+		"bash",
+		"kotlin",
+		"html",
+		"css",
+		"ocaml",
+		"perl",
+		"rust",
+		"julia",
+		"lua",
+		"haskell",
+		"c",
+		"cpp",
+		"c++",
+		"csharp",
+		"c#",
+		"react",
+		"swift",
+		"objective-c",
+		"objectivec",
+		"ai",
+		"method completion",
+		"intellicode",
+		"intellisense",
+		"snippets",
+		"kite",
+		"nodejs",
+		"node",
+		"node.js",
+		"jupyter",
+		"domination"
+	],
+	"engines": {
+		"vscode": "^1.34.0"
+	},
+	"bugs": {
+		"url": "https://www.useblackbox.io/"
+	},
+	"author": {
+		"name": "Blackbox",
+		"url": "https://www.useblackbox.io/"
+	},
+	"contributors": [],
+	"license": "",
+	"galleryBanner": {
+		"color": "#100f11",
+		"theme": "dark"
+	},
+	"categories": [
+		"Other",
+		"Programming Languages",
+		"Snippets",
+		"Machine Learning",
+		"Education"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "blackbox",
+					"title": "BlackBox",
+					"icon": "$(chat-editor-label-icon)"
+				}
+			]
+		},
+		"views": {
+			"blackbox": [
+				{
+					"type": "webview",
+					"id": "blackbox-onboarding",
+					"name": "Space",
+					"contextualTitle": "BlackBox",
+					"icon": "$(chat-editor-label-icon)",
+					"visibility": "visible"
+				}
+			]
+		},
+		"configuration": {},
+		"commands": [
+			{
+				"command": "extension.restoreVersion",
+				"title": "Restore Version",
+				"icon": "$(reply)"
+			},
+			{
+				"command": "extension.viewVersionDiff",
+				"title": "View Version Diff",
+				"icon": "$(diff)"
+			},
+			{
+				"command": "extension.clearAllVersions",
+				"title": "Clear Version History"
+			},
+			{
+				"command": "extension.saveVersion",
+				"title": "Save Version"
+			},
+			{
+				"command": "extension.viewVersions",
+				"title": "View Versions"
+			},
+			{
+				"command": "extension.disableBlackBoxAutoComplete",
+				"title": "Disable Blackbox Autocomplete"
+			},
+			{
+				"command": "extension.enableBlackBoxAutoComplete",
+				"title": "Enable Blackbox Autocomplete"
+			},
+			{
+				"command": "extension.clearBlackboxAutocomplete",
+				"title": "Clear Blackbox Autocomplete Lines"
+			},
+			{
+				"command": "extension.saveText",
+				"title": "Save as Blackbox Snippet"
+			},
+			{
+				"command": "extension.openChat",
+				"title": "Open Blackbox Chat"
+			},
+			{
+				"command": "extension.getSuggest",
+				"title": "Blackbox Generate Code"
+			},
+			{
+				"command": "extension.saveCodeToCloud",
+				"title": "Blackbox Share Code Link"
+			},
+			{
+				"command": "extension.explainCode",
+				"title": "Blackbox Explain Code"
+			},
+			{
+				"command": "extension.explainCodeStatusBar",
+				"title": "Blackbox Explain File Code"
+			},
+			{
+				"command": "extension.improveCode",
+				"title": "Blackbox Improve Code"
+			},
+			{
+				"command": "blackbox.historySearch",
+				"title": "Blackbox Saved Snippets",
+				"category": "blackbox"
+			},
+			{
+				"command": "blackbox.showChat",
+				"title": "Blackbox AI Chat"
+			},
+			{
+				"command": "blackbox.showDiff",
+				"title": "Blackbox Diff view"
+			},
+			{
+				"command": "blackbox.cleanDiff",
+				"title": "Blackbox Clean Diff History"
+			},
+			{
+				"command": "blackbox.readMe",
+				"title": "Create README.md"
+			},
+			{
+				"command": "blackbox.commitMsg",
+				"title": "AI Commit Message"
+			},
+			{
+				"command": "blackbox.commentFile",
+				"title": "Blackbox Comment File"
+			},
+			{
+				"command": "blackbox.bugReport",
+				"title": "Blackbox Bug Report"
+			},
+			{
+				"command": "extension.blackbox-connect",
+				"title": "Blackbox Connect"
+			},
+			{
+				"command": "blackbox.generateRepo",
+				"title": "Blackbox Generate Repo"
+			},
+			{
+				"command": "blackbox.editorChat",
+				"title": "Blackbox Review Code"
+			},
+			{
+				"command": "blackbox.comment.add",
+				"title": "Ask Blackbox",
+				"category": "Blackbox"
+			},
+			{
+				"command": "blackbox.openBrowser",
+				"title": "Open Blackbox Browser",
+				"category": "Blackbox",
+				"group": "Blackbox",
+				"icon": "$(bold)"
+			},
+			{
+				"command": "blackbox.terminal.search",
+				"title": "Terminal Search",
+				"category": "Blackbox",
+				"group": "Blackbox",
+				"icon": "$(bold)"
+			},
+			{
+				"command": "extension.saveCodeToCloud",
+				"title": "Blackbox Share Code Link",
+				"category": "Blackbox",
+				"group": "Blackbox",
+				"icon": "$(bold)"
+			},
+			{
+				"command": "blackbox.triggerOnCtrlI",
+				"title": "Trigger on Ctrl+U / Cmd+U"
+			},
+			{
+				"command": "extension.inlineQuality",
+				"title": "Blackbox Inline Quality Mode"
+			},
+			{
+				"command": "extension.inlineSpeed",
+				"title": "Blackbox Inline Beast Mode"
+			},
+			{
+				"command": "extension.autocompleteQuality",
+				"title": "Blackbox Autocomplete Quality Mode"
+			},
+			{
+				"command": "extension.autocompleteSpeed",
+				"title": "Blackbox Autocomplete Beast Mode"
+			},
+			{
+				"command": "blackbox.askGPT",
+				"title": "BLACKBOXAI: Query"
+			},
+			{
+				"command": "blackbox.addTests",
+				"title": "BLACKBOXAI: Add tests"
+			},
+			{
+				"command": "blackbox.explainPls",
+				"title": "BLACKBOXAI: Explain code"
+			},
+			{
+				"command": "blackbox.refactor",
+				"title": "BLACKBOXAI: Refactor"
+			},
+			{
+				"command": "blackbox.openCybercoder",
+				"title": "Open CyberCoder"
+			},
+			{
+				"command": "blackbox.openChat",
+				"title": "Open Multi File Editor Chat"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.activateContext",
+				"key": "ctrl+i",
+				"mac": "cmd+i"
+			},
+			{
+				"command": "extension.saveText",
+				"key": "ctrl+alt+l",
+				"mac": "shift+cmd+i"
+			},
+			{
+				"command": "extension.acceptSuggestion",
+				"key": "tab",
+				"mac": "tab",
+				"when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
+			},
+			{
+				"command": "extension.saveCodeToCloud",
+				"key": "ctrl+l",
+				"mac": "cmd+L",
+				"when": "editorTextFocus"
+			}
+		],
+		"menus": {
+			"view/item/context": [
+				{
+					"command": "extension.viewVersionDiff",
+					"when": "viewItem == version",
+					"group": "inline@1"
+				},
+				{
+					"command": "extension.restoreVersion",
+					"when": "viewItem == version",
+					"group": "inline@2"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "extension.saveText",
+					"group": "Blackbox"
+				},
+				{
+					"command": "extension.getSuggest",
+					"group": "Blackbox"
+				},
+				{
+					"command": "extension.saveCodeToCloud",
+					"group": "Blackbox"
+				},
+				{
+					"command": "extension.explainCode",
+					"group": "Blackbox"
+				},
+				{
+					"command": "extension.improveCode",
+					"group": "Blackbox"
+				},
+				{
+					"command": "extension.openChat",
+					"group": "Blackbox"
+				}
+			],
+			"scm/title": [
+				{
+					"command": "blackbox.commitMsg",
+					"when": "scmProvider == git",
+					"group": "navigation",
+					"title": "Commit Prefill"
+				}
+			],
+			"commandPalette": [
+				{
+					"command": "blackbox.comment.add",
+					"when": "false"
+				},
+				{
+					"command": "blackbox.terminal.search",
+					"when": "blackbox.newInstallation"
+				}
+			],
+			"comments/commentThread/context": [
+				{
+					"command": "blackbox.comment.add",
+					"group": "inline"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./",
+		"download-api": "vscode-dts dev",
+		"postdownload-api": "vscode-dts main",
+		"postinstall": "npx vscode-dts dev",
+		"test-compile": "tsc -p ./",
+		"build": "vsce package -o ./out-vsix",
+		"test": "jest"
+	},
+	"devDependencies": {
+		"@types/diff": "^5.2.1",
+		"@types/jest": "^27.4.1",
+		"@types/node": "^14.15.0",
+		"@typescript-eslint/eslint-plugin": "^4.16.0",
+		"@typescript-eslint/parser": "^4.16.0",
+		"bufferutil": "^4.0.3",
+		"esbuild": "^0.12.15",
+		"eslint": "^7.21.0",
+		"jest": "^27.5",
+		"ts-jest": "^27.1.4",
+		"ts-loader": "^9.2.3",
+		"typescript": "^4.2.2",
+		"utf-8-validate": "^5.0.5",
+		"vscode": "1.1.37",
+		"vscode-dts": "^0.3.3",
+		"webpack": "5.76.0",
+		"webpack-cli": "^4.7.2"
+	},
+	"dependencies": {
+		"@aws-sdk/client-transcribe-streaming": "^3.693.0",
+		"@picovoice/pvrecorder-node": "^1.2.4",
+		"@vscode/vscode-languagedetection": "^1.0.22",
+		"axios": "^1.6.2",
+		"diff": "^5.2.0",
+		"ignore": "^6.0.2",
+		"open": "^8.4.0",
+		"openai": "^4.56.0",
+		"socket.io-client": "^4.5.3",
+		"tar": "^7.4.3",
+		"uuid": "^9.0.0",
+		"vsce": "^1.96.1",
+		"ws": "^8.13.0"
+	},
+	"jest": {
+		"preset": "ts-jest",
+		"testEnvironment": "node"
+	},
+	"__metadata": {
+		"installedTimestamp": 1749973462889,
+		"size": 65344249
+	}
+}

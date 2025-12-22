@@ -1,0 +1,36 @@
+{
+  "name": "electron-audio",
+  "version": "1.0.0",
+  "main": "dist/main-bundle.js",
+  "scripts": {
+    "start": "npx electron dist/main-bundle.js",
+    "start:electron-audio": "npx electron dist/main-bundle.js",
+    "build": "tsc && npm run copy && npm run bundle",
+    "copy": "copyfiles -u 1 \"src/{index.html,bell.mp3}\" dist/",
+    "bundle": "node esbuild.config.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@livekit/components-react": "^2.9.3",
+    "@livekit/components-styles": "^1.1.4",
+    "livekit-client": "^2.8.0",
+    "electron": "^33.3.1",
+    "livekit-server-sdk": "^2.9.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io-client": "^4.5.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.12",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^16.11.7",
+    "@types/react": "^18.3.21",
+    "@types/react-dom": "^18.3.7",
+    "browserify": "^17.0.1",
+    "copyfiles": "^2.4.1",
+    "esbuild": "^0.21.0",
+    "jest": "^29.0.0",
+    "typescript": "^5.4.5"
+  }
+}
