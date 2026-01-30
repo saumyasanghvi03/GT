@@ -86,24 +86,32 @@ def main():
         backend_mode = st.radio("AI Hosting", ["☁️ Cloud (Slow/Low RAM)", "🏠 Local (Hybrid - RECOMMENDED)"], index=1)
         
         if "Local" in backend_mode:
-            remote_url = st.text_input("Local Backend URL", value="http://localhost:8000", help="Run local_server.py and enter its URL.")
+            raw_url = st.text_input("Local Backend URL", value="http://localhost:8000", help="Run local_server.py and enter its URL.")
+            remote_url = raw_url.strip().rstrip("/")
             
             # --- Auto-Check Backend ---
             try:
-                check = requests.get(f"{remote_url}/health", timeout=5).json()
-                if check.get("status") == "online":
-                    st.success(f"🟢 Backend Online (Running: {check.get('current_model', 'Unknown')})")
+                # Use a small timeout for rapid feedback
+                check_resp = requests.get(f"{remote_url}/health", timeout=3)
+                if check_resp.status_code == 200:
+                    check_data = check_resp.json()
+                    st.success(f"🟢 Backend Online (Running: {check_data.get('current_model', 'Unknown')})")
                     st.session_state.ai_ready = True
                     st.session_state.remote_url = remote_url
                 else:
-                    st.warning("🟡 Backend reachable but not ready.")
+                    st.warning(f"🟡 Backend returned status {check_resp.status_code}")
                     st.session_state.ai_ready = False
             except requests.exceptions.ConnectionError:
-                st.error("🔴 Backend Offline.")
-                st.info("💡 **Note:** If you are on Streamlit Cloud, you cannot reach 'localhost'. You must use an **Ngrok URL** or run this app locally.")
+                st.error("🔴 Connection Refused")
+                st.info("💡 **Cloud Users:** You cannot use 'localhost'. You must use an **Ngrok URL** (e.g., https://your-id.ngrok-free.app).")
+                st.session_state.ai_ready = False
+            except requests.exceptions.Timeout:
+                st.error("🔴 Connection Timeout")
+                st.info("The server is taking too long to respond. It might be busy loading the Llama-2 model.")
                 st.session_state.ai_ready = False
             except Exception as e:
-                st.error(f"🔴 Backend Check Error: {e}")
+                st.error(f"🔴 Connection Error: {type(e).__name__}")
+                st.caption(f"Details: {str(e)}")
                 st.session_state.ai_ready = False
 
             # Model Quality Toggle
