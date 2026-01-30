@@ -11,6 +11,7 @@ import os
 import io
 import time
 import random
+import requests
 from utils import init_airllm, load_knowledge_base, generate_response, parse_slides
 from prompts import SYSTEM_PROMPT_JUDGE, SYSTEM_PROMPT_ADVISOR
 
