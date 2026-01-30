@@ -48,10 +48,9 @@ def get_llm(model_key: str = "tiny"):
             # Use AirLLM logic for the big one if it's llama2 to save RAM, 
             # or standard transformers for tiny
             if model_key == "llama2":
-                # Llama-2-7b specifically
-                model = AutoModelForCausalLM.from_pretrained(target_id, device_map="auto", torch_dtype=torch.float16, low_cpu_mem_usage=True)
+                model = AutoModelForCausalLM.from_pretrained(target_id, device_map="auto", dtype=torch.float16, low_cpu_mem_usage=True)
             else:
-                model = AutoModelForCausalLM.from_pretrained(target_id, device_map="auto", torch_dtype=torch.float16)
+                model = AutoModelForCausalLM.from_pretrained(target_id, device_map="auto", dtype=torch.float16)
                 
             llm_pipe = pipeline("text-generation", model=model, tokenizer=tokenizer)
             current_model_id = target_id

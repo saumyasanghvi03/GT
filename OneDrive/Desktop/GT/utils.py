@@ -22,7 +22,7 @@ def init_airllm(model_id=DEFAULT_MODEL_ID, mock=False):
         model = AutoModelForCausalLM.from_pretrained(
             model_id, 
             device_map="auto", 
-            torch_dtype=torch.float16
+            dtype=torch.float16
         )
         # Create a pipeline for easier generation
         pipe = pipeline("text-generation", model=model, tokenizer=tokenizer)

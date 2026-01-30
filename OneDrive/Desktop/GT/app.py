@@ -171,8 +171,13 @@ def main():
                 st.warning("Local Backend is offline.")
             
             if st.button("🧠 Wake Up Internal AI"):
+                if "streamlit.app" in st.get_option("browser.serverAddress") and not use_mock:
+                    st.error("❌ **CRITICAL: RAM Limit Exceeded.**")
+                    st.info("Streamlit Cloud only has 1GB RAM. TinyLlama requires ~2.5GB. \n\n**To fix:** \n1. Check '⚡ Fast Mode (Mock AI)' above. \n2. Or run this app locally.")
+                    st.stop()
+                
                 if "streamlit.app" in st.get_option("browser.serverAddress"):
-                    st.toast("⚠️ Loading models in Cloud RAM... application may restart if memory exceeds 1GB.", icon="⚠️")
+                    st.toast("⚠️ Loading Mock AI engines...", icon="ℹ️")
                 
                 with st.status("Waking up AI engines...", expanded=True) as status:
                     st.write("Initializing LLM...")
