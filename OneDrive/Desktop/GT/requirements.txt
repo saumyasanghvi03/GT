@@ -1,0 +1,12 @@
+streamlit
+airllm
+torch
+transformers
+accelerate
+scipy
+streamlit-webrtc
+openai-whisper
+opencv-python-headless
+pydub
+numpy
+soundfile
