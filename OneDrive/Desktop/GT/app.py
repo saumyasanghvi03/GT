@@ -15,6 +15,32 @@ import requests
 from utils import init_airllm, load_knowledge_base, generate_response, parse_slides
 from prompts import SYSTEM_PROMPT_JUDGE, SYSTEM_PROMPT_ADVISOR
 
+# --- CSS Injection for UI Enhancement ---
+st.markdown("""
+<style>
+    .teleprompter {
+        background-color: #1e1e1e;
+        color: #00ff41;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid #333;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        height: 400px;
+        overflow-y: scroll;
+        margin-bottom: 20px;
+    }
+    .teleprompter b {
+        color: #ffcc00;
+        font-size: 1.3rem;
+    }
+    .stAlert {
+        border-radius: 10px;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # --- Audio Processing ---
 class AudioRecorder(AudioProcessorBase):
     def __init__(self):
@@ -196,12 +222,28 @@ def main():
         st.title("🎤 Phase 1: Pitch Verification")
         st.caption("Select the slide you are presenting. The AI will verify if you hit the key notes.")
 
-        # Slide Selector
+        # Slide Selector & Teleprompter
         slide_map = parse_slides(kb['pnotes'])
-        current_slide = st.selectbox("📌 Current Audience Slide:", list(slide_map.keys()))
         
-        with st.expander("Show Cheatsheet for Speaker"):
-            st.markdown(slide_map[current_slide])
+        col_ctrl, col_tele = st.columns([1, 2])
+        
+        with col_ctrl:
+            current_slide = st.selectbox("📌 Current Audience Slide:", list(slide_map.keys()))
+            tele_mode = st.toggle("📺 Teleprompter Mode", value=True)
+        
+        if tele_mode:
+            content = slide_map[current_slide]
+            # Replace markdown bold with HTML bold for the custom class if needed, 
+            # or just rely on markdown rendering inside the div.
+            # We'll use st.markdown but wrapped in our class.
+            st.markdown(f'<div class="teleprompter">', unsafe_allow_html=True)
+            st.markdown(content)
+            st.markdown('</div>', unsafe_allow_html=True)
+        else:
+            with st.expander("Show Raw Notes"):
+                st.markdown(slide_map[current_slide])
+
+        st.divider()
 
         col_input, col_output = st.columns([1, 1])
         
