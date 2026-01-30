@@ -163,10 +163,17 @@ def main():
         kb = load_knowledge_base()
         
         st.divider()
-        # Only show manual Wake Up if NOT in local mode or if local check failed
-        if not st.session_state.ai_ready and "Cloud" in backend_mode:
-            st.warning("AI is sleeping to save memory.")
-            if st.button("🧠 Wake Up AI"):
+        # Always show Wake Up if AI is not ready
+        if not st.session_state.ai_ready:
+            if "Cloud" in backend_mode:
+                st.warning("AI is sleeping to save memory.")
+            else:
+                st.warning("Local Backend is offline.")
+            
+            if st.button("🧠 Wake Up Internal AI"):
+                if "streamlit.app" in st.get_option("browser.serverAddress"):
+                    st.toast("⚠️ Loading models in Cloud RAM... application may restart if memory exceeds 1GB.", icon="⚠️")
+                
                 with st.status("Waking up AI engines...", expanded=True) as status:
                     st.write("Initializing LLM...")
                     st.session_state.llm = init_airllm(mock=use_mock)
@@ -178,15 +185,14 @@ def main():
                     st.session_state.ai_ready = True
                     status.update(label="AI Online!", state="complete")
                 st.rerun()
-        elif st.session_state.ai_ready and "Cloud" in backend_mode:
-            st.success("🤖 AI Engine: Online")
-            if st.button("💤 Put AI to Sleep"):
-                st.session_state.ai_ready = False
-                st.rerun()
-        elif st.session_state.ai_ready and "Local" in backend_mode:
-            st.success("🤖 AI Engine: Online (Local Backend)")
-        elif not st.session_state.ai_ready and "Local" in backend_mode:
-            st.warning("AI Engine: Offline (Local Backend not ready)")
+        else:
+            if "Cloud" in backend_mode:
+                st.success("🤖 AI Engine: Online (Internal)")
+                if st.button("💤 Put AI to Sleep"):
+                    st.session_state.ai_ready = False
+                    st.rerun()
+            else:
+                 st.success("🤖 AI Engine: Online (Local Backend)")
 
 
         if st.button("Reset Session"):
