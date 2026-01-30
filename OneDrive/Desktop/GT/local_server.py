@@ -3,11 +3,20 @@ import torch
 import whisper
 import threading
 from fastapi import FastAPI, UploadFile, File, Form
+from fastapi.middleware.cors import CORSMiddleware
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 import uvicorn
 import tempfile
 
 app = FastAPI(title="BlockVista Pitch Backend")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # --- Model Config ---
 MODELS = {

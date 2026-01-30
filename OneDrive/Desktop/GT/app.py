@@ -99,7 +99,8 @@ def main():
                     st.warning("🟡 Backend reachable but not ready.")
                     st.session_state.ai_ready = False
             except requests.exceptions.ConnectionError:
-                st.error("🔴 Backend Offline. Run 'python local_server.py'")
+                st.error("🔴 Backend Offline.")
+                st.info("💡 **Note:** If you are on Streamlit Cloud, you cannot reach 'localhost'. You must use an **Ngrok URL** or run this app locally.")
                 st.session_state.ai_ready = False
             except Exception as e:
                 st.error(f"🔴 Backend Check Error: {e}")
