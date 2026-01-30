@@ -62,10 +62,10 @@ def main():
     with st.sidebar:
         st.header("⚙️ War Room Config")
         persona = st.radio("AI Persona", ["🔥 Ruthless Board Member", "🛡️ Strategic Coach"])
-        input_mode = st.radio("Input Mode", ["🎤 Voice (Multimodal)", "⌨️ Text (Quiet Mode)"])
+        input_mode = st.radio("Input Mode", ["🎤 Voice (Multimodal)", "⌨️ Text (Quiet Mode)"], index=1)
         
         st.divider()
-        use_mock = st.checkbox("⚡ Fast Mode (Mock AI)", value=False, help="Use simplified logic to skip large model download.")
+        use_mock = st.checkbox("⚡ Fast Mode (Mock AI)", value=True, help="Use simplified logic to skip large model download.")
         
         kb = load_knowledge_base()
         if st.button("Reset Session"):
