@@ -83,16 +83,34 @@ def main():
         
         st.divider()
         backend_mode = st.radio("AI Hosting", ["☁️ Cloud (Slow/Low RAM)", "🏠 Local (Hybrid - RECOMMENDED)"], index=1)
-        remote_url = ""
-        if "Local" in backend_mode:
-            remote_url = st.text_input("Local Backend URL", value="http://localhost:8000", help="Run local_server.py and enter its URL (e.g., via Ngrok if on Cloud).")
-            if st.session_state.ai_ready:
-                st.session_state.remote_url = remote_url # Keep in sync
         
+        if "Local" in backend_mode:
+            remote_url = st.text_input("Local Backend URL", value="http://localhost:8000", help="Run local_server.py and enter its URL.")
+            
+            # --- Auto-Check Backend ---
+            try:
+                check = requests.get(f"{remote_url}/health", timeout=1).json()
+                if check.get("status") == "online":
+                    st.success(f"🟢 Backend Online ({check.get('model')})")
+                    st.session_state.ai_ready = True
+                    st.session_state.remote_url = remote_url
+                else:
+                    st.warning("🟡 Backend reachable but not ready.")
+                    st.session_state.ai_ready = False
+            except requests.exceptions.ConnectionError:
+                st.error("🔴 Backend Offline. Run 'python local_server.py'")
+                st.session_state.ai_ready = False
+            except Exception as e:
+                st.error(f"🔴 Backend Check Error: {e}")
+                st.session_state.ai_ready = False
+        else: # Cloud mode
+            st.session_state.remote_url = "" # Ensure remote_url is cleared if not in local mode
+            
         kb = load_knowledge_base()
         
         st.divider()
-        if not st.session_state.ai_ready:
+        # Only show manual Wake Up if NOT in local mode or if local check failed
+        if not st.session_state.ai_ready and "Cloud" in backend_mode:
             st.warning("AI is sleeping to save memory.")
             if st.button("🧠 Wake Up AI"):
                 with st.status("Waking up AI engines...", expanded=True) as status:
@@ -103,15 +121,19 @@ def main():
                         st.session_state.stt = load_whisper_model()
                     else:
                         st.session_state.stt = None
-                    st.session_state.remote_url = remote_url # Save the URL used at wake up
                     st.session_state.ai_ready = True
                     status.update(label="AI Online!", state="complete")
                 st.rerun()
-        else:
+        elif st.session_state.ai_ready and "Cloud" in backend_mode:
             st.success("🤖 AI Engine: Online")
             if st.button("💤 Put AI to Sleep"):
                 st.session_state.ai_ready = False
                 st.rerun()
+        elif st.session_state.ai_ready and "Local" in backend_mode:
+            st.success("🤖 AI Engine: Online (Local Backend)")
+        elif not st.session_state.ai_ready and "Local" in backend_mode:
+            st.warning("AI Engine: Offline (Local Backend not ready)")
+
 
         if st.button("Reset Session"):
             st.session_state.stage = "setup"
