@@ -90,9 +90,9 @@ def main():
             
             # --- Auto-Check Backend ---
             try:
-                check = requests.get(f"{remote_url}/health", timeout=1).json()
+                check = requests.get(f"{remote_url}/health", timeout=5).json()
                 if check.get("status") == "online":
-                    st.success(f"🟢 Backend Online ({check.get('model')})")
+                    st.success(f"🟢 Backend Online (Running: {check.get('current_model', 'Unknown')})")
                     st.session_state.ai_ready = True
                     st.session_state.remote_url = remote_url
                 else:
@@ -104,6 +104,11 @@ def main():
             except Exception as e:
                 st.error(f"🔴 Backend Check Error: {e}")
                 st.session_state.ai_ready = False
+
+            # Model Quality Toggle
+            st.divider()
+            q_label = st.select_slider("🧠 Brain Power", options=["Fast (TinyLlama)", "Premium (Llama-2)"], help="Premium requires 13GB download to be finished.")
+            st.session_state.model_key = "llama2" if "Premium" in q_label else "tiny"
         else: # Cloud mode
             st.session_state.remote_url = "" # Ensure remote_url is cleared if not in local mode
             
@@ -210,7 +215,11 @@ def main():
                     
                     OUTPUT: [VALID] or [MISSING...]. Be brief.
                     """
-                    feedback = generate_response(llm, prompt, "", remote_url=st.session_state.get("remote_url"))
+                    feedback = generate_response(
+                        llm, prompt, "", 
+                        remote_url=st.session_state.get("remote_url"),
+                        model_key=st.session_state.get("model_key", "tiny")
+                    )
                     st.info(feedback)
 
         if st.button("Next Phase: Q&A ->"):
@@ -250,7 +259,11 @@ def main():
             with st.spinner("Grading..."):
                 sys_p = SYSTEM_PROMPT_JUDGE if "Ruthless" in persona else SYSTEM_PROMPT_ADVISOR
                 final_p = sys_p.format(pnotes=kb['pnotes'], answers=kb['answers'], current_question=st.session_state.current_q)
-                feedback = generate_response(llm, final_p, user_answer, remote_url=st.session_state.get("remote_url"))
+                feedback = generate_response(
+                    llm, final_p, user_answer, 
+                    remote_url=st.session_state.get("remote_url"),
+                    model_key=st.session_state.get("model_key", "tiny")
+                )
                 st.markdown(feedback)
                 st.session_state.team_scores[target] = feedback
 

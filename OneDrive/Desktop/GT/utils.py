@@ -58,7 +58,7 @@ def load_knowledge_base():
 import requests
 import io
 
-def generate_response(pipe, system_prompt, user_input, max_length=512, remote_url=None):
+def generate_response(pipe, system_prompt, user_input, max_length=512, remote_url=None, model_key="tiny"):
     """
     Generates a response using Local Transformers, Mock, or Remote API.
     """
@@ -66,8 +66,13 @@ def generate_response(pipe, system_prompt, user_input, max_length=512, remote_ur
         try:
             resp = requests.post(
                 f"{remote_url}/generate",
-                data={"system_prompt": system_prompt, "user_input": user_input, "max_length": max_length},
-                timeout=30
+                data={
+                    "system_prompt": system_prompt, 
+                    "user_input": user_input, 
+                    "max_length": max_length,
+                    "model_key": model_key
+                },
+                timeout=60 # Increased timeout for Llama-2
             )
             return resp.json().get("response", "Error: No response from remote.")
         except Exception as e:
