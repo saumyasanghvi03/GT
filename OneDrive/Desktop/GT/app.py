@@ -57,6 +57,7 @@ def main():
     if "stage" not in st.session_state: st.session_state.stage = "setup"
     if "team_scores" not in st.session_state: st.session_state.team_scores = {}
     if "transcript_log" not in st.session_state: st.session_state.transcript_log = []
+    if "ai_ready" not in st.session_state: st.session_state.ai_ready = False
 
     # Sidebar Config
     with st.sidebar:
@@ -68,18 +69,40 @@ def main():
         use_mock = st.checkbox("⚡ Fast Mode (Mock AI)", value=True, help="Use simplified logic to skip large model download.")
         
         kb = load_knowledge_base()
+        
+        st.divider()
+        if not st.session_state.ai_ready:
+            st.warning("AI is sleeping to save memory.")
+            if st.button("🧠 Wake Up AI"):
+                with st.status("Waking up AI engines...", expanded=True) as status:
+                    st.write("Initializing LLM...")
+                    st.session_state.llm = init_airllm(mock=use_mock)
+                    if "Voice" in input_mode:
+                        st.write("Loading Whisper...")
+                        st.session_state.stt = load_whisper_model()
+                    else:
+                        st.session_state.stt = None
+                    st.session_state.ai_ready = True
+                    status.update(label="AI Online!", state="complete")
+                st.rerun()
+        else:
+            st.success("🤖 AI Engine: Online")
+            if st.button("💤 Put AI to Sleep"):
+                st.session_state.ai_ready = False
+                st.rerun()
+
         if st.button("Reset Session"):
             st.session_state.stage = "setup"
             st.session_state.team_scores = {}
             st.session_state.transcript_log = []
             st.rerun()
 
-    # Load AI
-    llm = init_airllm(mock=use_mock)
-    stt_model = None
-    if "Voice" in input_mode:
-        with st.spinner("Loading Ears (Whisper)..."):
-            stt_model = load_whisper_model()
+    # Load AI (Access via session state)
+    llm = st.session_state.get("llm") if st.session_state.ai_ready else None
+    stt_model = st.session_state.get("stt") if st.session_state.ai_ready else None
+    
+    if not st.session_state.ai_ready:
+        st.info("⚠️ **Note:** Please click 'Wake Up AI' in the sidebar to enable Pitch Verification and AI Critiques.")
 
     # --- PHASE 0: TEAM SETUP ---
     if st.session_state.stage == "setup":

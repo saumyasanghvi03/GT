@@ -1,0 +1,3 @@
+ffmpeg
+libportaudio2
+libsndfile1
