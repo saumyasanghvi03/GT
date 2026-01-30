@@ -8,6 +8,7 @@ import whisper
 import tempfile
 import soundfile as sf
 import os
+import io
 import time
 import random
 from utils import init_airllm, load_knowledge_base, generate_response, parse_slides
@@ -40,10 +41,22 @@ def load_whisper_model():
     # Only load if needed to save RAM
     return whisper.load_model("base")
 
-def transcribe_audio(audio_data, model):
+def transcribe_audio(audio_data, model, remote_url=None):
     if audio_data is None: return ""
+    
+    # Export to bytes
+    buffer = io.BytesIO()
+    sf.write(buffer, audio_data, 48000, format='WAV')
+    audio_bytes = buffer.getvalue()
+
+    if remote_url:
+        from utils import remote_transcribe
+        return remote_transcribe(audio_bytes, remote_url)
+
+    if model is None: return "STT Engine Offline."
+    
     with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
-        sf.write(tmp.name, audio_data, 48000)
+        tmp.write(audio_bytes)
         tmp_path = tmp.name
     result = model.transcribe(tmp_path)
     os.remove(tmp_path)
@@ -68,6 +81,14 @@ def main():
         st.divider()
         use_mock = st.checkbox("⚡ Fast Mode (Mock AI)", value=True, help="Use simplified logic to skip large model download.")
         
+        st.divider()
+        backend_mode = st.radio("AI Hosting", ["☁️ Cloud (Slow/Low RAM)", "🏠 Local (Hybrid - RECOMMENDED)"], index=1)
+        remote_url = ""
+        if "Local" in backend_mode:
+            remote_url = st.text_input("Local Backend URL", value="http://localhost:8000", help="Run local_server.py and enter its URL (e.g., via Ngrok if on Cloud).")
+            if st.session_state.ai_ready:
+                st.session_state.remote_url = remote_url # Keep in sync
+        
         kb = load_knowledge_base()
         
         st.divider()
@@ -82,6 +103,7 @@ def main():
                         st.session_state.stt = load_whisper_model()
                     else:
                         st.session_state.stt = None
+                    st.session_state.remote_url = remote_url # Save the URL used at wake up
                     st.session_state.ai_ready = True
                     status.update(label="AI Online!", state="complete")
                 st.rerun()
@@ -144,7 +166,7 @@ def main():
                         audio = ctx.audio_processor.get_audio_data()
                         if audio is not None:
                             if audio.ndim > 1: audio = audio.mean(axis=1)
-                            user_input = transcribe_audio(audio, stt_model)
+                            user_input = transcribe_audio(audio, stt_model, remote_url=st.session_state.get("remote_url"))
                             ctx.audio_processor.clear()
             else:
                 user_input = st.text_area("Type pitch script segment here...")
@@ -165,7 +187,7 @@ def main():
                     
                     OUTPUT: [VALID] or [MISSING...]. Be brief.
                     """
-                    feedback = generate_response(llm, prompt, "")
+                    feedback = generate_response(llm, prompt, "", remote_url=st.session_state.get("remote_url"))
                     st.info(feedback)
 
         if st.button("Next Phase: Q&A ->"):
@@ -194,7 +216,7 @@ def main():
                     audio = ctx_q.audio_processor.get_audio_data()
                     if audio is not None:
                         if audio.ndim > 1: audio = audio.mean(axis=1)
-                        user_answer = transcribe_audio(audio, stt_model)
+                        user_answer = transcribe_audio(audio, stt_model, remote_url=st.session_state.get("remote_url"))
         else:
             user_answer = st.text_area("Your Strategic Answer:")
             if st.button("Evaluate Text"):
@@ -205,7 +227,7 @@ def main():
             with st.spinner("Grading..."):
                 sys_p = SYSTEM_PROMPT_JUDGE if "Ruthless" in persona else SYSTEM_PROMPT_ADVISOR
                 final_p = sys_p.format(pnotes=kb['pnotes'], answers=kb['answers'], current_question=st.session_state.current_q)
-                feedback = generate_response(llm, final_p, user_answer)
+                feedback = generate_response(llm, final_p, user_answer, remote_url=st.session_state.get("remote_url"))
                 st.markdown(feedback)
                 st.session_state.team_scores[target] = feedback
 

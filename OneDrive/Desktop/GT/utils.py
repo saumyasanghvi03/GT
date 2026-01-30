@@ -55,12 +55,26 @@ def load_knowledge_base():
             
     return knowledge
 
-def generate_response(pipe, system_prompt, user_input, max_length=512):
+import requests
+import io
+
+def generate_response(pipe, system_prompt, user_input, max_length=512, remote_url=None):
     """
-    Generates a response using the Transformers Pipeline or Mock logic.
+    Generates a response using Local Transformers, Mock, or Remote API.
     """
+    if remote_url:
+        try:
+            resp = requests.post(
+                f"{remote_url}/generate",
+                data={"system_prompt": system_prompt, "user_input": user_input, "max_length": max_length},
+                timeout=30
+            )
+            return resp.json().get("response", "Error: No response from remote.")
+        except Exception as e:
+            return f"Remote Error: {e}"
+
     if not pipe:
-        return "Model not initialized."
+        return "Model not initialized. Wake up the AI or check settings."
         
     if pipe == "MOCK_MODEL":
         import time # Moved import here to avoid unused import if not mocking
@@ -114,8 +128,17 @@ def parse_slides(markdown_text):
         else:
             current_content.append(line)
             
-    # Save last
+    # Use last
     if current_content:
         slides[current_slide] = "\n".join(current_content).strip()
         
     return slides
+
+def remote_transcribe(audio_bytes, remote_url):
+    """Sends audio bytes to local server for Whisper transcription."""
+    try:
+        files = {"file": ("audio.wav", audio_bytes, "audio/wav")}
+        resp = requests.post(f"{remote_url}/transcribe", files=files, timeout=60)
+        return resp.json().get("text", "Error: Transcription failed.")
+    except Exception as e:
+        return f"Remote Transcription Error: {e}"
