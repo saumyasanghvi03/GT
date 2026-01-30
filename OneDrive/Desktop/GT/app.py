@@ -103,7 +103,20 @@ def main():
                     st.session_state.ai_ready = False
             except requests.exceptions.ConnectionError:
                 st.error("🔴 Connection Refused")
-                st.info("💡 **Cloud Users:** You cannot use 'localhost'. You must use an **Ngrok URL** (e.g., https://your-id.ngrok-free.app).")
+                
+                # Diagnostic check: Is the user on Streamlit Cloud?
+                if "streamlit.app" in st.get_option("browser.serverAddress") or "share.streamlit.io" in st.get_option("browser.serverAddress"):
+                    st.markdown("""
+                    > [!CAUTION]
+                    > **CLOUD LIMITATION**: You are viewing this on Streamlit's website. It **cannot** see your computer's 'localhost'.
+                    > 
+                    > **Choose One:**
+                    > 1. **Run Locally**: In your terminal, run `python -m streamlit run app.py` and open the local link.
+                    > 2. **Use Ngrok**: Run `ngrok http 8000` and paste the `https://...` link here.
+                    """)
+                else:
+                    st.info("💡 Make sure `python local_server.py` is running and NOT blocked by your firewall.")
+                
                 st.session_state.ai_ready = False
             except requests.exceptions.Timeout:
                 st.error("🔴 Connection Timeout")
