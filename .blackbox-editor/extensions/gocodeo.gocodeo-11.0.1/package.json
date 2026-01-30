@@ -466,7 +466,7 @@
 		"mixpanel": "^0.17.0",
 		"mixpanel-browser": "^2.47.0",
 		"openai": "^4.76.0",
-		"pdfjs-dist": "2.16.105",
+		"pdfjs-dist": "4.2.67",
 		"postcss-normalize": "^10.0.1",
 		"prettier": "^3.4.2",
 		"python-shell": "^5.0.0",
