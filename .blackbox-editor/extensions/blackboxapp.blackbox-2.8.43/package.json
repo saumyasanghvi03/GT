@@ -404,7 +404,7 @@
 		"utf-8-validate": "^5.0.5",
 		"vscode": "1.1.37",
 		"vscode-dts": "^0.3.3",
-		"webpack": "5.76.0",
+		"webpack": "5.104.1",
 		"webpack-cli": "^4.7.2"
 	},
 	"dependencies": {
