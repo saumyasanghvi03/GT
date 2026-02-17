@@ -1,0 +1,12 @@
+{
+  "name": "pramana-terminal",
+  "private": true,
+  "workspaces": [
+    "apps/terminal-frontend",
+    "apps/api-server"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/api-server & npm run dev -w apps/terminal-frontend",
+    "build": "npm run build -w apps/api-server && npm run build -w apps/terminal-frontend"
+  }
+}
