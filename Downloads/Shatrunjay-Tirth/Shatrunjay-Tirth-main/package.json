@@ -1,0 +1,32 @@
+{
+  "name": "shatrunjay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-router-dom": "^6.22.0",
+    "i18next": "^23.10.0",
+    "react-i18next": "^14.1.0",
+    "i18next-browser-languagedetector": "^7.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^9",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vite": "^5.2.0"
+  }
+}

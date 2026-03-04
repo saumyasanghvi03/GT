@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+@theme {
+  --color-saffron-50: #fffcf0;
+  --color-saffron-100: #fffae0;
+  --color-saffron-200: #fff3b3;
+  --color-saffron-300: #ffe67a;
+  --color-saffron-400: #ffd440;
+  --color-saffron-500: #fdbb11;
+  --color-saffron-600: #e39a09;
+  --color-saffron-700: #bd730a;
+  --color-saffron-800: #995a0f;
+  --color-saffron-900: #7d4a13;
+  --color-saffron-950: #482606;
+
+  --color-temple-gold: #d4af37;
+  --color-temple-maroon: #fdfbf7; /* Marble White */
+  --color-temple-red: #fff9e6;    /* Soft Cream Gold */
+  --color-marble: #ffffff;
+  --color-gold-glow: rgba(212, 175, 55, 0.1);
+
+  --font-baloo: "Baloo Bhai 2", cursive;
+  --font-noto: "Noto Sans Gujarati", "Inter", sans-serif;
+  
+  --breakpoint-xs: 375px;
+}
+
+@layer base {
+  .nav-card.card-accent-gold { --card-accent: 45 90% 50%; }
+  .nav-card.card-accent-blue { --card-accent: 40 85% 45%; }
+  .nav-card.card-accent-purple { --card-accent: 35 80% 40%; }
+  .nav-card.card-accent-green { --card-accent: 45 95% 55%; }
+  .nav-card.card-accent-orange { --card-accent: 38 100% 50%; }
+  .nav-card.card-accent-rose { --card-accent: 42 90% 48%; }
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+  }
+
+  .dark {
+    --background: 45 100% 98%; /* Soft Gold Background */
+    --foreground: 20 14.3% 4.1%;
+    --color-marble: #fffcf0;
+    --color-temple-maroon: #fffcf0;
+    --color-temple-red: #fff9e6;
+  }
+
+  body {
+    @apply bg-white text-stone-900 min-h-screen font-noto antialiased;
+    background-image: radial-gradient(circle at top right, var(--color-saffron-50) 0%, transparent 40%),
+                      radial-gradient(circle at bottom left, var(--color-saffron-50) 0%, transparent 40%);
+  }
+
+  .dark body {
+    @apply bg-saffron-50 text-stone-900 border-temple-gold/20;
+    background-image: radial-gradient(circle at top right, rgba(212, 175, 55, 0.05) 0%, transparent 45%),
+                      radial-gradient(circle at bottom left, rgba(212, 175, 55, 0.05) 0%, transparent 45%);
+  }
+}
+
+/* Header & Footer */
+.jain-header {
+  @apply sticky top-0 z-40 bg-marble/80 backdrop-blur-md border-b border-saffron-100 dark:border-saffron-900/40 shadow-sm transition-all;
+}
+
+.header-inner {
+  @apply max-w-2xl mx-auto px-4 h-16 flex items-center justify-between;
+}
+
+.brand-link {
+  @apply flex items-center gap-2 no-underline;
+}
+
+.om-symbol {
+  @apply text-2xl text-saffron-600 dark:text-temple-gold group-hover:scale-110 transition-transform;
+}
+
+.brand-name {
+  @apply font-baloo text-xl font-bold bg-gradient-to-r from-saffron-700 to-saffron-900 dark:from-saffron-700 dark:to-temple-gold bg-clip-text text-transparent;
+}
+
+.header-actions {
+  @apply flex items-center gap-1;
+}
+
+.jain-footer {
+  @apply mt-20 pb-12 pt-8 text-center border-t border-saffron-100 dark:border-saffron-200/40 bg-saffron-50/30 dark:bg-saffron-100/20;
+}
+
+.footer-ornament {
+  @apply text-saffron-300 dark:text-saffron-800 mb-4 text-xl;
+}
+
+.footer-mantra {
+  @apply font-baloo text-xl text-saffron-700 dark:text-saffron-800;
+}
+
+.footer-sub {
+  @apply text-stone-400 dark:text-saffron-900/50 text-sm mt-1;
+}
+
+/* Hero Section */
+.hero-section {
+  @apply relative overflow-hidden py-16 text-center px-4;
+}
+
+.hero-mandala {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 opacity-10 dark:opacity-30 pointer-events-none;
+}
+
+.mandala-ring {
+  @apply border-2 border-saffron-500 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse;
+}
+
+.mandala-ring-1 { width: 300px; height: 300px; animation-duration: 4s; }
+.mandala-ring-2 { width: 500px; height: 500px; animation-duration: 6s; opacity: 0.5; }
+.mandala-ring-3 { width: 700px; height: 700px; animation-duration: 8s; opacity: 0.2; }
+
+.hero-content {
+  @apply relative z-10 space-y-4 max-w-xl mx-auto;
+}
+
+.hero-badge {
+  @apply inline-block px-3 py-1 rounded-full bg-saffron-100 dark:bg-saffron-900/30 text-saffron-800 dark:text-saffron-200 text-xs font-bold tracking-wider uppercase mb-2;
+}
+
+.hero-title {
+  @apply font-baloo text-5xl md:text-6xl font-extrabold text-stone-900 drop-shadow-sm;
+}
+
+.hero-subtitle {
+  @apply text-stone-500 dark:text-saffron-200/60 text-lg leading-relaxed;
+}
+
+.hero-divider {
+  @apply flex items-center justify-center gap-4 py-4;
+}
+
+.hero-divider-dot {
+  @apply w-1.5 h-1.5 rounded-full bg-saffron-300 dark:bg-saffron-700;
+}
+
+.hero-tagline {
+  @apply font-baloo text-saffron-600 dark:text-temple-gold font-medium text-lg;
+}
+
+/* Nav Grid */
+.nav-grid {
+  @apply grid gap-4 max-w-2xl mx-auto px-4 pb-20;
+}
+
+.nav-card {
+  @apply relative overflow-hidden flex items-center gap-5 p-6 rounded-3xl border border-saffron-100 dark:border-saffron-200/40 bg-white/80 dark:bg-white/90 backdrop-blur-sm hover:border-saffron-400 dark:hover:border-temple-gold transition-all duration-300 hover:shadow-xl hover:shadow-saffron-500/10 hover:-translate-y-1 active:scale-[0.98] no-underline;
+}
+
+.nav-card-icon {
+  @apply text-4xl group-hover:scale-110 transition-transform duration-300;
+}
+
+.nav-card-body {
+  @apply flex-1;
+}
+
+.nav-card-title {
+  @apply font-baloo text-xl font-bold text-stone-900 mb-1 group-hover:text-saffron-700 dark:group-hover:text-temple-gold transition-colors;
+}
+
+.nav-card-desc {
+  @apply text-sm text-stone-500 dark:text-saffron-200/60 leading-snug line-clamp-2;
+}
+
+.nav-card-arrow {
+  @apply text-2xl text-stone-300 dark:text-saffron-300 group-hover:text-saffron-500 transition-all duration-300 group-hover:translate-x-1;
+}
+
+/* Card Accents */
+.card-accent-gold::after { @apply content-[''] absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-temple-gold to-transparent opacity-0 group-hover:opacity-100 transition-opacity; }
+.card-accent-blue::after { @apply content-[''] absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity; }
+.card-accent-purple::after { @apply content-[''] absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity; }
+.card-accent-green::after { @apply content-[''] absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity; }
+.card-accent-orange::after { @apply content-[''] absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-orange-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity; }
+.card-accent-rose::after { @apply content-[''] absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-rose-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-saffron-200 dark:bg-saffron-900/40 rounded-full hover:bg-saffron-300 dark:hover:bg-saffron-800 transition-colors;
+}
+
+/* Utility classes for fonts */
+.font-baloo { font-family: var(--font-baloo); }
+.font-noto { font-family: var(--font-noto); }

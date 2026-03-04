@@ -1,0 +1,15 @@
+
+> shatrunjay@0.1.0 build
+> vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 3 modules transformed.
+x Build failed in 584ms
+error during build:
+Could not resolve "./app/globals.css" from "src/main.tsx"
+file: C:/Users/ssang/Downloads/Shatrunjay-Tirth/Shatrunjay-Tirth-main/src/main.tsx
+    at getRollupError (file:///C:/Users/ssang/Downloads/Shatrunjay-Tirth/Shatrunjay-Tirth-main/node_modules/rollup/dist/es/shared/parseAst.js:402:41)
+    at error (file:///C:/Users/ssang/Downloads/Shatrunjay-Tirth/Shatrunjay-Tirth-main/node_modules/rollup/dist/es/shared/parseAst.js:398:42)
+    at ModuleLoader.handleInvalidResolvedId (file:///C:/Users/ssang/Downloads/Shatrunjay-Tirth/Shatrunjay-Tirth-main/node_modules/rollup/dist/es/shared/node-entry.js:21710:24)
+    at file:///C:/Users/ssang/Downloads/Shatrunjay-Tirth/Shatrunjay-Tirth-main/node_modules/rollup/dist/es/shared/node-entry.js:21670:26

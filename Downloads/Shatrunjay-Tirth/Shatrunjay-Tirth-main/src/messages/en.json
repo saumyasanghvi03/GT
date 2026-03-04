@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "home": "Home",
+    "navkarMantra": "Navkar Mantra",
+    "uvasaggaharam": "Uvasaggaharam Stotra",
+    "bhaktamar": "Bhaktamar Stotra",
+    "shatrunjayYatra": "Chha Gaav Yatra",
+    "chaityavandan": "Chaityavandan",
+    "chaitriPunam": "Chaitri Punam Vidhi"
+  },
+  "home": {
+    "title": "Shatrunjay Tirth",
+    "subtitle": "A devotional companion for Jain prayers and pilgrimages",
+    "tagline": "Jai Jinendra"
+  },
+  "navkarMantra": {
+    "title": "Navkar Mantra",
+    "description": "The supreme Jain prayer honoring the Panch Parameshti — the five supreme beings"
+  },
+  "uvasaggaharam": {
+    "title": "Uvasaggaharam Stotra",
+    "description": "Five stanzas dedicated to Lord Parshwanath, the remover of obstacles, composed by Acharya Bhadrabahu"
+  },
+  "bhaktamar": {
+    "title": "Bhaktamar Stotra",
+    "description": "44 verses praising Lord Adinath (Rishabhdev), composed by Acharya Manatunga in the vasantatilaka meter"
+  },
+  "shatrunjayYatra": {
+    "title": "Shatrunjay Chha Gaav Yatra",
+    "description": "The sacred 12-mile pilgrimage across Mount Shatrunjay — seven stops of devotion and endurance"
+  },
+  "chaityavandan": {
+    "title": "Chaityavandan",
+    "description": "The 16-step Shwetambar Murtipujak ritual of temple worship before the Jina idol"
+  },
+  "chaitriPunam": {
+    "title": "Chaitri Punam Vidhi",
+    "description": "The five Devvandan sequences performed on the most auspicious day of the Jain calendar",
+    "significance": "Significance",
+    "names": "Names of Shatrunjaya",
+    "bhavaYatra": "Bhava Yatra — Five Chaityavandan Stations",
+    "bhavaYatraDesc": "A structured mental pilgrimage through five sacred stations, mirroring the physical ascent of Shatrunjaya Hill.",
+    "station": "Station",
+    "focus": "Focus",
+    "actions": "Actions",
+    "verse": "Verse",
+    "navpadOli": "Navpad Ayambil Oli",
+    "navpadOliDesc": "A 9-day austerity cycle concluding on Chaitra Purnima (Day 9 — Samyag Tap).",
+    "ayambilRules": "Ayambil Rules",
+    "forbidden": "Forbidden",
+    "allowed": "Allowed",
+    "purpose": "Purpose",
+    "ashtaprakari": "Ashtaprakari Puja",
+    "ashtaprakariDesc": "Eight substances offered in worship, each symbolising an inner spiritual principle.",
+    "substance": "Substance",
+    "innerMeaning": "Inner Meaning",
+    "kayotsarga": "Kayotsarga Counter",
+    "kayotsargaDesc": "Track your Kayotsarga (body-abandonment) repetitions. Advanced Chaitra observance: 150 repetitions.",
+    "qty": "Qty",
+    "kayotsarga": "Kayotsarga"
+  },
+  "common": {
+    "verse": "Verse",
+    "of": "of",
+    "step": "Step",
+    "stop": "Stop",
+    "completed": "Completed",
+    "search": "Search stotras and prayers...",
+    "darkMode": "Dark Mode",
+    "wakeLock": "Keep Screen On",
+    "gujarati": "Gujarati",
+    "english": "English",
+    "male": "Male",
+    "female": "Female",
+    "progress": "Progress",
+    "resetProgress": "Reset",
+    "menu": "Menu",
+    "close": "Close"
+  }
+}
