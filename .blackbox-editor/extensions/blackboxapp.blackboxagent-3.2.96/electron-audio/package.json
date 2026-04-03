@@ -14,7 +14,7 @@
     "@livekit/components-react": "^2.9.3",
     "@livekit/components-styles": "^1.1.4",
     "livekit-client": "^2.8.0",
-    "electron": "^33.3.1",
+    "electron": "^41.1.1",
     "livekit-server-sdk": "^2.9.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
